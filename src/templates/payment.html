@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment | Grocerymart</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <meta name="theme-color" content="#77DAE6" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    @@include('./partials/header-logined.html')
+
+    <!-- Main -->
+    <main class="checkout-page">
+      <div class="container">
+        <!-- Search bar -->
+        <div class="checkout-container">
+          <div class="search-bar d-none d-md-flex">
+            <input type="text" name="" id="" placeholder="Search for item" class="search-bar-input" />
+            <button class="search-bar-submit">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  cx="11.7666"
+                  cy="11.7666"
+                  r="8.98856"
+                  stroke="#1A162E"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.0183 18.4852L21.5423 22.0001"
+                  stroke="#1A162E"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Breadcrumbs -->
+        <div class="checkout-container">
+          <ul class="breadcrumbs checkout-page-breadcrumbs">
+            <li>
+              <a href="./" class="breadcrumbs-link">
+                Home
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.5 1L8.5 8L1.5 15"
+                    stroke="#9E9DA8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="./checkout.html" class="breadcrumbs-link">
+                Checkout
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.5 1L8.5 8L1.5 15"
+                    stroke="#9E9DA8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="./checkout.html" class="breadcrumbs-link">
+                Shipping
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.5 1L8.5 8L1.5 15"
+                    stroke="#9E9DA8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="breadcrumbs-link breadcrumbs-link-current"> Payment method </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Checkout content -->
+        <div class="checkout-container">
+          <div class="row gy-xl-3">
+            <div class="col-8 col-xl-12">
+              <div class="cart-info">
+                <div class="cart-info-top">
+                  <h2 class="cart-info-heading cart-info-heading-lv2">1. Shipping, arrives between Mon, May 16—Tue, May 24</h2>
+                  <button class="cart-info-edit-btn js-toggle" toggle-target="#add-new-address">
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.7471 20.4428H20.9997" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.78 3.79479C13.5557 2.86779 14.95 2.73186 15.8962 3.49173C15.9485 3.53296 17.6295 4.83879 17.6295 4.83879C18.669 5.46719 18.992 6.80311 18.3494 7.82259C18.3153 7.87718 8.81195 19.7645 8.81195 19.7645C8.49578 20.1589 8.01583 20.3918 7.50291 20.3973L3.86353 20.443L3.04353 16.9723C2.92866 16.4843 3.04353 15.9718 3.3597 15.5773L12.78 3.79479Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M11.0205 6.00098L16.4728 10.1881" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                                                                
+                    Edit  
+                  </button>
+                </div>
+                <!-- Payment item 1 -->
+                <article class="payment-item">
+                  <div class="payment-item-info">
+                    <h3 class="payment-item-title">Imran Khan</h3>
+                    <p class="payment-item-desc">Museum of Rajas, Sylhet Sadar, Sylhet 3100.</p>
+                  </div>
+                </article>
+                <!-- Payment item 2 -->
+                <article class="payment-item">
+                  <div class="payment-item-info">
+                    <h3 class="payment-item-title">Items details</h3>
+                    <p class="payment-item-desc">2 items</p>
+                  </div>
+                  <a href="./shipping.html" class="payment-item-detail">View details</a>
+                </article>
+              </div>
+              <div class="cart-info">
+                <h2 class="cart-info-heading cart-info-heading-lv2">2. Shipping method</h2>
+                <div class="cart-info-separate"></div>
+                <h3 class="cart-info-sub-heading">Availeble Shipping method</h3>
+                <!-- Payment item 3 -->
+                 
+                  <article class="payment-item payment-item-pointer">
+                    <img src="../assets/images/payment/delivery-1.png" alt="" class="payment-item-thumb">
+                    <div class="payment-item-content">
+                      <div class="payment-item-info">
+                        <h3 class="payment-item-title">Fedex Delivery</h3>
+                        <p class="payment-item-desc">
+                          Delivery: 2-3 days work
+                        </p>
+                      </div>
+                      <div class="card-info-checkbox payment-item-checkbox">
+                        <input type="radio" name="delivery-method" checked class="card-info-checkbox-input payment-item-checkbox-input">
+                        <span class="payment-item-cost">Free</span>
+                      </div>
+                    </div>
+                  </article>
+                 
+                <!-- Payment item 4 -->
+                
+                  <article class="payment-item payment-item-pointer">
+                    <img src="./assets/images/payment/delivery-2.png" alt="" class="payment-item-thumb">
+                    <div class="payment-item-content">
+                      <div class="payment-item-info">
+                        <h3 class="payment-item-title">DHL Delivery</h3>
+                        <p class="payment-item-desc">
+                          Delivery: 2-3 days work
+                        </p>
+                      </div>
+                      <div class="card-info-checkbox payment-item-checkbox">
+                        <input type="radio" name="delivery-method" class="card-info-checkbox-input payment-item-checkbox-input">
+                        <span class="payment-item-cost">$12.00</span>
+                      </div>
+                    </div>
+                  </article>
+                 
+              </div>
+            </div>
+            <div class="col-4 col-xl-12">
+              <div class="cart-info">
+                <h2 class="cart-info-heading cart-info-heading-lv2">Payment Details</h2>
+                <p class="cart-info-desc">Complete your purchase item by providing your payment details order.</p>
+                <div class="form cart-info-form">
+                  <div class="form-group">
+                    <label for="name" class="form-label form-label-medium">Email Address</label>
+                    <div class="form-text-input form-text-input-small">
+                      <input type="text" name="name" id="name" placeholder="example@gmail.com" class="form-input" required />
+                     
+                      <svg
+                        class="form-input-icon-error"
+                        style="width: 20px"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                        />
+                      </svg>
+                    </div>
+                    <p class="form-error">Email is not in correct format</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="form-label form-label-medium">Card Holder</label>
+                    <div class="form-text-input form-text-input-small">
+                      <input type="text" name="name" id="name" placeholder="example@gmail.com" class="form-input" required />
+                     
+                      <svg
+                        class="form-input-icon-error"
+                        style="width: 20px"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                        />
+                      </svg>
+                    </div>
+                    <p class="form-error">Email is not in correct format</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="form-label form-label-medium">Card Details</label>
+                    <div class="form-text-input form-text-input-small">
+                      <input type="text" name="name" id="name" placeholder="example@gmail.com" class="form-input" required />
+                     
+                      <svg
+                        class="form-input-icon-error"
+                        style="width: 20px"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                      >
+                        <path
+                          d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                        />
+                      </svg>
+                    </div>
+                    <p class="form-error">Email is not in correct format</p>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <div class="form-text-input">
+                        <input type="text" name="name" id="name" placeholder="MM/YY" class="form-input" required />
+                       
+                        <svg
+                          class="form-input-icon-error"
+                          style="width: 20px"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="form-error">Email is not in correct format</p>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-text-input">
+                        <input type="text" name="name" id="name" placeholder="CVC" class="form-input" required />
+                       
+                        <svg
+                          class="form-input-icon-error"
+                          style="width: 20px"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="form-error">Email is not in correct format</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-info-row">
+                  <span>Subtotal <span class="cart-info-sub-label">(items)</span></span>
+                  <span>3</span>
+                </div>
+                <div class="cart-info-row">
+                  <span>Price <span class="cart-info-sub-label">(Total)</span></span>
+                  <span>$191.65</span>
+                </div>
+                <div class="cart-info-row">
+                  <span>Shipping</span>
+                  <span>$10.00</span>
+                </div>
+                <div class="cart-info-separate"></div>
+                <div class="cart-info-row">
+                  <span>Estimated Total</span>
+                  <span>$201.65</span>
+                </div>
+                <a href="./payment.html" class="btn btn-primary btn-rounded cart-info-next-btn">Pay $465.98</a>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    @@include('./partials/footer.html')
+
+    <!-- Modal : confirm delete shopping cart item -->
+
+    <div id="delete-confirm" class="modal modal-small hide">
+      <!-- <button class="modal-close">&times;</button> -->
+      <div class="modal-content">
+        <div class="modal-text">Do you want to delete this item ?</div>
+        <div class="modal-bottom">
+          <button class="btn btn-small btn-outline modal-btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
+          <button class="btn btn-small btn-danger  btn-primary modal-btn btn-no-margin js-toggle" toggle-target="#delete-confirm">Delete</button>
+        </div>
+      </div>
+      <div class="modal-overlay js-toggle" toggle-target="#delete-confirm"></div>
+    </div>
+
+    <!-- Modal : add new shopping address -->
+
+    <div id="add-new-address" class="modal hide" style="--content-width: 650px">
+      <!-- <button class="modal-close">&times;</button> -->
+      <div class="modal-content">
+        <form action="" class="form">
+        <h2 class="modal-heading">Add new shopping address</h2>
+        <div class="modal-body">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label form-label-small">Name</label>
+                <div class="form-text-input form-text-input-small">
+                  <input type="text" name="name" id="name" placeholder="Name" class="form-input" required minlength="2" />
+                 
+                  <svg
+                    class="form-input-icon-error"
+                    style="width: 20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                    />
+                  </svg>
+                </div>
+                <p class="form-error">Name must be at least 2 characters</p>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label form-label-small">Phone</label>
+                <div class="form-text-input form-text-input-small">
+                  <input type="tel" name="phone" id="phone" placeholder="Phone" class="form-input" required minlength="10" />
+                 
+                  <svg
+                    class="form-input-icon-error"
+                    style="width: 20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                    />
+                  </svg>
+
+
+                </div>
+                <p class="form-error">Phone must be at least 10 characters</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address" class="form-label form-label-small">Address</label>
+              <div class="form-text-area">
+                <textarea name="address" id="address" placeholder="Address (Area and street)" class="form-text-area-input" required ></textarea>
+               
+                <svg
+                  class="form-input-icon-error"
+                  style="width: 20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                  />
+                </svg>
+              </div>
+              <p class="form-error">Address not empty</p>
+            </div>
+            <div class="form-group">
+              <div class="form-text-input form-text-input-small">
+                <input id="city" name="" placeholder="City/ District/Town" class="form-input js-toggle" toggle-target="#city-dialog" />
+               <div id="city-dialog" class="form-select-dialog hide">
+              <h2 class="form-dialog-heading d-none d-sm-block">City/ District/Town</h2>
+                <button class="form-close-dialog d-none d-sm-block js-toggle" toggle-target="#city-dialog">&times</button>
+                <div class="form-search">
+                  <input type="text" name="" placeholder="Search" class="form-search-input">
+                  <svg class="form-search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11.7666" cy="11.7666" r="8.98856" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18.0183 18.4852L21.5423 22.0001" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </div>
+                <ul class="form-option-list">
+                  <li class="form-option">Ha Noi</li>
+                  <li class="form-option form-option-current">Ho Chi Minh</li>
+                  <li class="form-option">Da Nang</li>
+                  <li class="form-option">Ha Noi</li>
+                  <li class="form-option">Ho Chi Minh</li>
+                  <li class="form-option">Da Nang</li>
+                  <li class="form-option">Ha Noi</li>
+                  <li class="form-option">Ho Chi Minh</li>
+                  <li class="form-option">Da Nang</li>
+                  <li class="form-option">Ha Noi</li>
+                  <li class="form-option">Ho Chi Minh</li>
+                  <li class="form-option">Da Nang</li>
+                </ul>
+               </div>
+              </div>
+            </div>
+            <div class="form-group form-group-inline">
+              <label class="form-checkbox">
+                <input type="checkbox" name="" id="" class="form-checkbox-input d-none" />
+                <span class="form-checkbox-label">Set as default address</span>
+              </label>
+            </div>
+          </div>
+          <div class="modal-bottom">
+            <button class="btn btn-text modal-btn js-toggle" toggle-target="#add-new-address">Cancel</button>
+            <button class="btn btn-small btn-text btn-primary modal-btn btn-no-margin">Create</button>
+          </div>
+        </form>
+        </div>
+      <div class="modal-overlay"></div>
+    </div>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>

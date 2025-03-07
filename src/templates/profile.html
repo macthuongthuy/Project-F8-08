@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Grocerymart</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <meta name="theme-color" content="#77DAE6" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    @@include('./partials/header-logined.html')
+
+    <!-- Main -->
+    <main class="profile">
+      <div class="container">
+        <!-- Search bar -->
+        <div class="profile-container">
+          <div class="search-bar d-none d-md-flex">
+            <input type="text" name="" id="" placeholder="Search for item" class="search-bar-input" />
+            <button class="search-bar-submit">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  cx="11.7666"
+                  cy="11.7666"
+                  r="8.98856"
+                  stroke="#1A162E"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.0183 18.4852L21.5423 22.0001"
+                  stroke="#1A162E"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+       
+        <!-- Profile content -->
+        <div class="profile-container">
+          <div class="row gy-md-3">
+            <div class="col-3 col-xl-4 col-lg-5 col-md-12">
+              <aside class="profile-sidebar">
+                <div class="profile-user">
+                  <img src="./assets/images/avatar.jpg" alt="" class="profile-user-avatar">
+                  <h1 class="profile-user-name">Angela Jolie</h1>
+                  <p class="profile-user-desc">Registered: 17th May 2022</p>
+                </div>
+                <!-- Menu 1 -->
+                 <div class="profile-menu">
+                  <h3 class="profile-menu-title">Manage Account</h3>
+                  <ul class="profile-menu-list">
+                    <li>
+                      <a href="./edit-personal-info.html" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9847 15.3457C8.11707 15.3457 4.81421 15.9305 4.81421 18.2724C4.81421 20.6143 8.09611 21.22 11.9847 21.22C15.8523 21.22 19.1542 20.6343 19.1542 18.2933C19.1542 15.9524 15.8733 15.3457 11.9847 15.3457Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9846 12.0059C14.5227 12.0059 16.5799 9.94779 16.5799 7.40969C16.5799 4.8716 14.5227 2.81445 11.9846 2.81445C9.44655 2.81445 7.38845 4.8716 7.38845 7.40969C7.37988 9.93922 9.42369 11.9973 11.9523 12.0059H11.9846Z" stroke="#1A162E" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </span>
+                        Personal info
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 10.5005C14.5 9.11924 13.3808 8 12.0005 8C10.6192 8 9.5 9.11924 9.5 10.5005C9.5 11.8808 10.6192 13 12.0005 13C13.3808 13 14.5 11.8808 14.5 10.5005Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9995 21C10.801 21 4.5 15.8984 4.5 10.5633C4.5 6.38664 7.8571 3 11.9995 3C16.1419 3 19.5 6.38664 19.5 10.5633C19.5 15.8984 13.198 21 11.9995 21Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </span>
+                        Addresses
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9024 8.85156L13.4591 12.4646C12.6196 13.1306 11.4384 13.1306 10.5989 12.4646L6.11816 8.85156" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9089 21C19.9502 21.0084 22 18.5095 22 15.4384V8.57001C22 5.49883 19.9502 3 16.9089 3H7.09114C4.04979 3 2 5.49883 2 8.57001V15.4384C2 18.5095 4.04979 21.0084 7.09114 21H16.9089Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </span>
+                        Communications & privacy
+                      </a>
+                    </li>
+                  </ul>
+                 </div>
+
+                 <!-- Menu 2 -->
+                 <div class="profile-menu">
+                  <h3 class="profile-menu-title">My items</h3>
+                  <ul class="profile-menu-list">
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.1223 15.4365L12.1223 3.39551" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.0383 12.5088L12.1223 15.4368L9.20633 12.5088" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.7551 8.12793H17.6881C19.7231 8.12793 21.3721 9.77693 21.3721 11.8129V16.6969C21.3721 18.7269 19.7271 20.3719 17.6971 20.3719L6.55707 20.3719C4.52207 20.3719 2.87207 18.7219 2.87207 16.6869V11.8019C2.87207 9.77293 4.51807 8.12793 6.54707 8.12793L7.48907 8.12793" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                    
+                        </span>
+                        Reorder
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.87187 11.5983C1.79887 8.24832 3.05287 4.41932 6.56987 3.28632C8.41987 2.68932 10.4619 3.04132 11.9999 4.19832C13.4549 3.07332 15.5719 2.69332 17.4199 3.28632C20.9369 4.41932 22.1989 8.24832 21.1269 11.5983C19.4569 16.9083 11.9999 20.9983 11.9999 20.9983C11.9999 20.9983 4.59787 16.9703 2.87187 11.5983Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 6.70001C17.07 7.04601 17.826 8.00101 17.917 9.12201" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                  
+                        </span>
+                        Lists
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12V21H5V12" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 8H3V12H21V8Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 21V8" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8H8.14286C7.57454 8 7.02949 7.73661 6.62763 7.26777C6.22576 6.79893 6 6.16304 6 5.5C6 4.83696 6.22576 4.20107 6.62763 3.73223C7.02949 3.26339 7.57454 3 8.14286 3C11.1429 3 12 8 12 8Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8H15.8571C16.4255 8 16.9705 7.73661 17.3724 7.26777C17.7742 6.79893 18 6.16304 18 5.5C18 4.83696 17.7742 4.20107 17.3724 3.73223C16.9705 3.26339 16.4255 3 15.8571 3C12.8571 3 12 8 12 8Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                      
+                        </span>
+                        Registries
+                      </a>
+                    </li>
+                  </ul>
+                 </div>
+
+                 <!-- Menu 2 -->
+                 <div class="profile-menu">
+                  <h3 class="profile-menu-title">Subscriptions & plans</h3>
+                  <ul class="profile-menu-list">
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9846 21.606C11.9846 21.606 19.6566 19.283 19.6566 12.879C19.6566 6.474 19.9346 5.974 19.3196 5.358C18.7036 4.742 12.9906 2.75 11.9846 2.75C10.9786 2.75 5.26557 4.742 4.65057 5.358C4.03457 5.974 4.31257 6.474 4.31257 12.879C4.31257 19.283 11.9846 21.606 11.9846 21.606Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.38574 11.8741L11.2777 13.7691L15.1757 9.86914" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                           
+                        </span>
+                        Protection plans
+                      </a>
+                    </li>                   
+                  </ul>
+                 </div>
+
+                 <!-- Menu 3 -->
+                 <div class="profile-menu">
+                  <h3 class="profile-menu-title">Customer Service</h3>
+                  <ul class="profile-menu-list">
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.334 2.75009H7.665C4.644 2.75009 2.75 4.88909 2.75 7.91609V16.0841C2.75 19.1111 4.635 21.2501 7.665 21.2501H16.333C19.364 21.2501 21.25 19.1111 21.25 16.0841V7.91609C21.25 4.88909 19.364 2.75009 16.334 2.75009Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.9941 16.0001V12.0001" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.9901 8.20419H12.0001" stroke="#1A162E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                                   
+                        </span>
+                        Help
+                      </a>
+                    </li>    
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.75009C17.108 2.75009 21.25 6.89109 21.25 12.0001C21.25 17.1081 17.108 21.2501 12 21.2501C6.891 21.2501 2.75 17.1081 2.75 12.0001C2.75 6.89109 6.891 2.75009 12 2.75009Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.9951 8.20419V12.6232" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.995 15.7961H12.005" stroke="#1A162E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                                                       
+                        </span>
+                        Terms of Use
+                      </a>
+                    </li>                    
+                  </ul>
+                 </div>
+              </aside>
+            </div>
+            <div class="col-9 col-xl-8 col-lg-7 col-md-12">
+              <div class="cart-info">
+                <div class="row gy-3">
+                  <!-- My wallet -->
+                   <div class="col-12">
+                      <h2 class="cart-info-heading">My Wallet</h2>
+                      <p class="cart-info-desc profile-desc">Payment methods</p>
+                      <div class="row gy-md-2 row-cols-3 row-cols-xl-2 row-cols-lg-1">
+                        <!-- Payment card 1 -->
+                        <div class="col">
+                          <article class="payment-card">
+                            <img src="./assets/images/profile/payment-card-1.png" alt="" class="payment-card-img">
+                          </article>
+                        </div>
+                        <!-- Payment card 2 -->
+                        <div class="col">
+                          <article class="payment-card">
+                            <img src="./assets/images/profile/payment-card-2.png" alt="" class="payment-card-img">
+                          </article>
+                        </div>
+                        <!-- Payment card 3 -->
+                        <div class="col">
+                          <a href="./add-new-card.html" class="new-card">
+                            <svg class="icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.4996 8.32715V15.6535" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.1663 11.9904H8.83301" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1857 2H7.81429C4.54762 2 2.5 4.31208 2.5 7.58516V16.4148C2.5 19.6879 4.5381 22 7.81429 22H17.1857C20.4619 22 22.5 19.6879 22.5 16.4148V7.58516C22.5 4.31208 20.4619 2 17.1857 2Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            <p class="new-card-text">Add New Card</p>                   
+                          </a>
+                        </div>
+                      </div>
+                   </div>
+
+                  <!-- Account info -->
+                   <div class="col-12">
+                    <h2 class="cart-info-heading">Account info</h2>
+                    <p class="cart-info-desc profile-desc">Addresses, contact information and password</p>
+                    <div class="row gy-md-2 row-cols-2 row-cols-lg-1">
+                      <!-- Account info 1-->
+                       <div class="col">
+                        <a href="#!">
+                          <article class="account-info">
+                            <div class="account-info-icon">
+                              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.9024 8.85156L13.4591 12.4646C12.6196 13.1306 11.4384 13.1306 10.5989 12.4646L6.11816 8.85156" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9089 21C19.9502 21.0084 22 18.5095 22 15.4384V8.57001C22 5.49883 19.9502 3 16.9089 3H7.09114C4.04979 3 2 5.49883 2 8.57001V15.4384C2 18.5095 4.04979 21.0084 7.09114 21H16.9089Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                            </div>
+                            <div>
+                              <h3 class="account-info-title">Email Address</h3>
+                              <p class="account-info-desc">tarek97.ta@gmail.com</p>
+                            </div>
+                          </article>
+                        </a>
+                       </div>
+
+                       <!-- Account info 2-->
+                       <div class="col">
+                        <a href="#!">
+                          <article class="account-info">
+                            <div class="account-info-icon">
+                              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.353 2.5C18.054 2.911 20.978 5.831 21.393 9.532" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.353 6.04303C16.124 6.38703 17.508 7.77203 17.853 9.54303" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0315 12.4724C15.0205 16.4604 15.9254 11.8467 18.4653 14.3848C20.9138 16.8328 22.3222 17.3232 19.2188 20.4247C18.8302 20.737 16.3613 24.4943 7.68447 15.8197C-0.993406 7.144 2.76157 4.67244 3.07394 4.28395C6.18377 1.17385 6.66682 2.58938 9.11539 5.03733C11.6541 7.5765 7.04254 8.48441 11.0315 12.4724Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </div>
+                            <div>
+                              <h3 class="account-info-title">Phone number</h3>
+                              <p class="account-info-desc">+000 11122 2345 657</p>
+                            </div>
+                          </article>
+                        </a>
+                       </div>
+
+                       <!-- Account info 3-->
+                       <div class="col">
+                        <a href="#!">
+                          <article class="account-info">
+                            <div class="account-info-icon">
+                              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 10.5005C14.5 9.11924 13.3808 8 12.0005 8C10.6192 8 9.5 9.11924 9.5 10.5005C9.5 11.8808 10.6192 13 12.0005 13C13.3808 13 14.5 11.8808 14.5 10.5005Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9995 21C10.801 21 4.5 15.8984 4.5 10.5633C4.5 6.38664 7.8571 3 11.9995 3C16.1419 3 19.5 6.38664 19.5 10.5633C19.5 15.8984 13.198 21 11.9995 21Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </div>
+                            <div>
+                              <h3 class="account-info-title">Add an address</h3>
+                              <p class="account-info-desc">Bangladesh Embassy, Washington, DC 20008</p>
+                            </div>
+                          </article>
+                        </a>
+                       </div>
+                    </div>
+                   </div>
+
+                  <!-- Lists -->
+                  <div class="col-12">
+                    <h2 class="cart-info-heading">Lists</h2>
+                    <p class="cart-info-desc profile-desc">2 items - Primary</p>
+                  
+                      <!-- Favourite item 1 -->
+                      <article class="favourite-item">
+                        <a href="./product-detail.html">
+                          <img src="./assets/images/product/item-1.png" alt="" class="favourite-item-thumb">
+                        </a>
+                          <div>
+                            <h3 class="favourite-item-title">
+                              <a href="./product-detail.html">Coffee Beans - Espresso Arabica and Robusta Beans</a>
+                            </h3>
+                            <div class="favourite-item-content">
+                              <span class="favourite-item-price">$47.00</span>
+                              <button class="btn btn-primary btn-rounded">Add to cart</button>
+                            
+                            </div>
+                          </div>
+                        
+                      </article>
+
+                      <div class="separate" style="--margin: 20px"></div>
+
+                      <!-- Favourite item 2 -->
+                      <article class="favourite-item">
+                        <a href="./product-detail.html">
+                          <img src="./assets/images/product/item-2.png" alt="" class="favourite-item-thumb">
+                        </a>
+                          <div>
+                            <h3 class="favourite-item-title">
+                              <a href="./product-detail.html">Lavazza Coffee Blends - Try the Italian Espresso</a>
+                            </h3>
+                            <div class="favourite-item-content">
+                              <span class="favourite-item-price">$53.00</span>
+                              <button class="btn btn-primary btn-rounded">Add to cart</button>
+                            
+                            </div>
+                          </div>
+                        
+                      </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    @@include('./partials/footer.html')
+
+     <!-- Modal : confirm delete shopping cart item -->
+
+     <div id="delete-confirm" class="modal modal-small hide">
+      <!-- <button class="modal-close">&times;</button> -->
+      <div class="modal-content">
+        <div class="modal-text">Do you want to delete this item ?</div>
+        <div class="modal-bottom">
+          <button class="btn btn-small btn-outline modal-btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
+          <button class="btn btn-small btn-danger  btn-primary modal-btn btn-no-margin js-toggle" toggle-target="#delete-confirm">Delete</button>
+        </div>
+      </div>
+      <div class="modal-overlay js-toggle" toggle-target="#delete-confirm"></div>
+    </div>
+
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>

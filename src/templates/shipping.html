@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipping | Grocerymart</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <meta name="theme-color" content="#77DAE6" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    @@include('./partials/header-logined.html')
+
+    <!-- Main -->
+    <main class="checkout-page">
+      <div class="container">
+        <!-- Search bar -->
+        <div class="checkout-container">
+          <div class="search-bar d-none d-md-flex">
+            <input type="text" name="" id="" placeholder="Search for item" class="search-bar-input" />
+            <button class="search-bar-submit">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  cx="11.7666"
+                  cy="11.7666"
+                  r="8.98856"
+                  stroke="#1A162E"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.0183 18.4852L21.5423 22.0001"
+                  stroke="#1A162E"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Breadcrumbs -->
+        <div class="checkout-container">
+          <ul class="breadcrumbs checkout-page-breadcrumbs">
+            <li>
+              <a href="./" class="breadcrumbs-link">
+                Home
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.5 1L8.5 8L1.5 15"
+                    stroke="#9E9DA8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="./checkout.html" class="breadcrumbs-link">
+                Checkout
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.5 1L8.5 8L1.5 15"
+                    stroke="#9E9DA8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#!" class="breadcrumbs-link breadcrumbs-link-current"> Shipping </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Checkout content -->
+        <div class="checkout-container">
+          <div class="row gy-xl-3">
+            <div class="col-8 col-xl-12">
+              <div class="cart-info">
+                <h1 class="cart-info-heading">1. Shipping, arrives between Mon, May 16—Tue, May 24</h1>
+                <div class="cart-info-separate"></div>
+
+                <!-- Checkout address -->
+                  <div class="user-address">
+                    <div class="user-address-top">
+                      <div>
+                        <h2 class="user-address-title">Shipping address</h2>
+                        <p class="user-address-desc">Where should we deliver your order?</p>
+                      </div>
+                      <button class="user-address-btn btn btn-primary btn-rounded btn-small js-toggle" toggle-target="#add-new-address">
+                        <svg class="icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.9996 7.32715V14.6535" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M14.6663 10.9904H7.33301" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        <span>Add a new address</span>
+                      </button>
+                    </div>
+                    <div class="user-address-list">
+
+                      <!-- Empty message -->
+                       <!-- <p class="user-address-message">
+                        Not address yet. <a href="#!" class="user-address-link js-toggle" toggle-target="#add-new-address">Add a new address</a>
+                       </p> -->
+                      <!-- Address card 1 -->
+                      <article class="address-card">
+                        <div class="address-card-left">
+                          <div class="address-card-choose">
+                            <!-- Custum checkbox -->
+                             <label class="address-card-checkbox">
+                              <input type="checkbox" name="" class="address-card-checkbox-input" checked>
+                             </label>
+                            
+                          </div>
+                          <div class="address-card-info">
+                            <h3 class="address-card-title">Imran Khan</h3>
+                            <p class="address-card-desc">Museum of Rajas, Sylhet Sadar, Sylhet 3100.</p>
+                            <ul class="address-card-list">
+                              <li class="form-option">Shipping</li>
+                              <li class="form-option">Delivery from store</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="address-card-right">
+                          <div class="address-card-ctrl">
+                            <button class="cart-info-edit-btn js-toggle" toggle-target="#add-new-address">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7471 20.4428H20.9997" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.78 3.79479C13.5557 2.86779 14.95 2.73186 15.8962 3.49173C15.9485 3.53296 17.6295 4.83879 17.6295 4.83879C18.669 5.46719 18.992 6.80311 18.3494 7.82259C18.3153 7.87718 8.81195 19.7645 8.81195 19.7645C8.49578 20.1589 8.01583 20.3918 7.50291 20.3973L3.86353 20.443L3.04353 16.9723C2.92866 16.4843 3.04353 15.9718 3.3597 15.5773L12.78 3.79479Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.0205 6.00098L16.4728 10.1881" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                                
+                              Edit  
+                            </button>
+                          </div>
+                        </div>
+                      </article>
+                      <!-- Address card 2 -->
+                      <article class="address-card">
+                        <div class="address-card-left">
+                          <div class="address-card-choose">
+                            <!-- Custum checkbox -->
+                            <label class="address-card-checkbox">
+                              <input type="checkbox" name="" class="address-card-checkbox-input">
+                             </label>
+                            
+                          </div>
+                          <div class="address-card-info">
+                            <h3 class="address-card-title">Imran Khan</h3>
+                            <p class="address-card-desc">Al Hamra City (10th Floor), Hazrat Shahjalal Road, Sylhet, Sylhet, Bangladesh</p>
+                            <ul class="address-card-list">
+                              <li class="form-option">Shipping</li>
+                              <li class="form-option">Delivery from store</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="address-card-right">
+                          <div class="address-card-ctrl">
+                            <button class="cart-info-edit-btn js-toggle" toggle-target="#add-new-address">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7471 20.4428H20.9997" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.78 3.79479C13.5557 2.86779 14.95 2.73186 15.8962 3.49173C15.9485 3.53296 17.6295 4.83879 17.6295 4.83879C18.669 5.46719 18.992 6.80311 18.3494 7.82259C18.3153 7.87718 8.81195 19.7645 8.81195 19.7645C8.49578 20.1589 8.01583 20.3918 7.50291 20.3973L3.86353 20.443L3.04353 16.9723C2.92866 16.4843 3.04353 15.9718 3.3597 15.5773L12.78 3.79479Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.0205 6.00098L16.4728 10.1881" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                                
+                              Edit  
+                            </button>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="cart-info-separate"></div>
+                <h2 class="cart-info-sub-heading">Items details</h2>
+                <div class="cart-info-list">
+                  <!-- Cart item 1 -->
+                  <article class="cart-item">
+                    <a href="./product-detail.html">
+                      <img src="./assets/images/product/item-1.png" alt="" class="cart-item-thumb">
+                    </a>
+                    <div class="cart-item-content">
+                      <div class="cart-item-content-left">
+                        <h3 class="cart-item-title">
+                          <a href="./product-detail.html">Coffee Beans - Espresso Arabica and Robusta Beans</a>
+                        </h3>
+                        <p class="cart-item-price-wrap">
+                          $47.00 | <span class="cart-item-status">In Stock</span>
+                        </p>
+                        <div class="cart-item-ctrl cart-item-ctrl-md-block">
+                          <div class="cart-item-input">
+                            LavAzza
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M19 8.5L12 15.5L5 8.5" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                              
+                          </div>
+                          <div class="cart-item-input">
+                            <button class="cart-item-input-btn">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6663 10.9904H7.33301" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </button>
+                            <span>1</span>
+                            <button class="cart-item-input-btn">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.9996 7.32715V14.6535" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.6663 10.9904H7.33301" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-item-content-right">
+                        <p class="cart-item-total-price">$47.00</p>
+                        <div class="cart-item-ctrl">
+                          <button class="cart-item-ctrl-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.87187 11.5983C1.79887 8.24832 3.05287 4.41932 6.56987 3.28632C8.41987 2.68932 10.4619 3.04132 11.9999 4.19832C13.4549 3.07332 15.5719 2.69332 17.4199 3.28632C20.9369 4.41932 22.1989 8.24832 21.1269 11.5983C19.4569 16.9083 11.9999 20.9983 11.9999 20.9983C11.9999 20.9983 4.59787 16.9703 2.87187 11.5983Z" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16 6.69995C17.07 7.04595 17.826 8.00095 17.917 9.12195" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              Save                             
+                          </button>
+                          <button class="cart-item-ctrl-btn js-toggle" toggle-target="#delete-confirm">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M19.3248 9.46875C19.3248 9.46875 18.7818 16.2037 18.4668 19.0407C18.3168 20.3957 17.4798 21.1898 16.1088 21.2148C13.4998 21.2618 10.8878 21.2648 8.27979 21.2098C6.96079 21.1828 6.13779 20.3788 5.99079 19.0478C5.67379 16.1858 5.13379 9.46875 5.13379 9.46875" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M20.708 6.24023H3.75" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M17.4406 6.23998C16.6556 6.23998 15.9796 5.68498 15.8256 4.91598L15.5826 3.69998C15.4326 3.13898 14.9246 2.75098 14.3456 2.75098H10.1126C9.53358 2.75098 9.02558 3.13898 8.87558 3.69998L8.63258 4.91598C8.47858 5.68498 7.80258 6.23998 7.01758 6.23998" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              Delete
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <!-- Cart item 2 -->
+                  <article class="cart-item">
+                    <a href="./product-detail.html">
+                      <img src="./assets/images/product/item-2.png" alt="" class="cart-item-thumb">
+                    </a>
+                    <div class="cart-item-content">
+                      <div class="cart-item-content-left">
+                        <h3 class="cart-item-title">
+                          <a href="./product-detail.html">Lavazza Coffee Blends - Try the Italian Espresso</a>
+                        </h3>
+                        <p class="cart-item-price-wrap">
+                          $53.00 | <span class="cart-item-status">In Stock</span>
+                        </p>
+                        <div class="cart-item-ctrl cart-item-ctrl-md-block">
+                          <div class="cart-item-input">
+                            LavAzza
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M19 8.5L12 15.5L5 8.5" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                              
+                          </div>
+                          <div class="cart-item-input">
+                            <button class="cart-item-input-btn">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6663 10.9904H7.33301" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </button>
+                            <span>2</span>
+                            <button class="cart-item-input-btn">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.9996 7.32715V14.6535" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.6663 10.9904H7.33301" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-item-content-right">
+                        <p class="cart-item-total-price">$106.00</p>
+                        <div class="cart-item-ctrl">
+                          <button class="cart-item-ctrl-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.87187 11.5983C1.79887 8.24832 3.05287 4.41932 6.56987 3.28632C8.41987 2.68932 10.4619 3.04132 11.9999 4.19832C13.4549 3.07332 15.5719 2.69332 17.4199 3.28632C20.9369 4.41932 22.1989 8.24832 21.1269 11.5983C19.4569 16.9083 11.9999 20.9983 11.9999 20.9983C11.9999 20.9983 4.59787 16.9703 2.87187 11.5983Z" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16 6.69995C17.07 7.04595 17.826 8.00095 17.917 9.12195" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              Save                             
+                          </button>
+                          <button class="cart-item-ctrl-btn js-toggle" toggle-target="#delete-confirm">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M19.3248 9.46875C19.3248 9.46875 18.7818 16.2037 18.4668 19.0407C18.3168 20.3957 17.4798 21.1898 16.1088 21.2148C13.4998 21.2618 10.8878 21.2648 8.27979 21.2098C6.96079 21.1828 6.13779 20.3788 5.99079 19.0478C5.67379 16.1858 5.13379 9.46875 5.13379 9.46875" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M20.708 6.24023H3.75" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M17.4406 6.23998C16.6556 6.23998 15.9796 5.68498 15.8256 4.91598L15.5826 3.69998C15.4326 3.13898 14.9246 2.75098 14.3456 2.75098H10.1126C9.53358 2.75098 9.02558 3.13898 8.87558 3.69998L8.63258 4.91598C8.47858 5.68498 7.80258 6.23998 7.01758 6.23998" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              Delete
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+
+                  <!-- Cart item 3 -->
+                  <article class="cart-item">
+                    <a href="./product-detail.html">
+                      <img src="./assets/images/product/item-3.png" alt="" class="cart-item-thumb">
+                    </a>
+                    <div class="cart-item-content">
+                      <div class="cart-item-content-left">
+                        <h3 class="cart-item-title">
+                          <a href="./product-detail.html">Qualità Oro Mountain Grown - Espresso Coffee Beans</a>
+                        </h3>
+                        <p class="cart-item-price-wrap">
+                          $38.65 | <span class="cart-item-status">In Stock</span>
+                        </p>
+                        <div class="cart-item-ctrl cart-item-ctrl-md-block">
+                          <div class="cart-item-input">
+                            LavAzza
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M19 8.5L12 15.5L5 8.5" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>                              
+                          </div>
+                          <div class="cart-item-input">
+                            <button class="cart-item-input-btn">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6663 10.9904H7.33301" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </button>
+                            <span>1</span>
+                            <button class="cart-item-input-btn">
+                              <svg class="icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.9996 7.32715V14.6535" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.6663 10.9904H7.33301" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6857 1H6.31429C3.04762 1 1 3.31208 1 6.58516V15.4148C1 18.6879 3.0381 21 6.31429 21H15.6857C18.9619 21 21 18.6879 21 15.4148V6.58516C21 3.31208 18.9619 1 15.6857 1Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-item-content-right">
+                        <p class="cart-item-total-price">$38.65</p>
+                        <div class="cart-item-ctrl">
+                          <button class="cart-item-ctrl-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.87187 11.5983C1.79887 8.24832 3.05287 4.41932 6.56987 3.28632C8.41987 2.68932 10.4619 3.04132 11.9999 4.19832C13.4549 3.07332 15.5719 2.69332 17.4199 3.28632C20.9369 4.41932 22.1989 8.24832 21.1269 11.5983C19.4569 16.9083 11.9999 20.9983 11.9999 20.9983C11.9999 20.9983 4.59787 16.9703 2.87187 11.5983Z" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16 6.69995C17.07 7.04595 17.826 8.00095 17.917 9.12195" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              Save                             
+                          </button>
+                          <button class="cart-item-ctrl-btn js-toggle" toggle-target="#delete-confirm">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M19.3248 9.46875C19.3248 9.46875 18.7818 16.2037 18.4668 19.0407C18.3168 20.3957 17.4798 21.1898 16.1088 21.2148C13.4998 21.2618 10.8878 21.2648 8.27979 21.2098C6.96079 21.1828 6.13779 20.3788 5.99079 19.0478C5.67379 16.1858 5.13379 9.46875 5.13379 9.46875" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M20.708 6.24023H3.75" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M17.4406 6.23998C16.6556 6.23998 15.9796 5.68498 15.8256 4.91598L15.5826 3.69998C15.4326 3.13898 14.9246 2.75098 14.3456 2.75098H10.1126C9.53358 2.75098 9.02558 3.13898 8.87558 3.69998L8.63258 4.91598C8.47858 5.68498 7.80258 6.23998 7.01758 6.23998" stroke="#9E9DA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              Delete
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="cart-info-bottom d-md-none">
+                  <div class="row">
+                    <div class="col-8 col-xxl-7">
+                      <a href="./" class="cart-info-continue-link">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M15.5 19L8.5 12L15.5 5" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          
+                        Continue Shopping
+                      </a>
+                    </div>
+                    <div class="col-4 col-xxl-5">
+                      <div class="cart-info-row">
+                        <span>Subtotal:</span>
+                        <span>$191.65</span>
+                      </div>
+                      <div class="cart-info-row">
+                        <span>Shipping:</span>
+                        <span>$10.00</span>
+                      </div>
+                      <div class="cart-info-separate"></div>
+                      <div class="cart-info-row cart-info-row-bold">
+                        <span>Total:</span>
+                        <span>$201.65</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-xl-12">
+              <div class="cart-info">
+                <div class="cart-info-row">
+                  <span>Subtotal <span class="cart-info-sub-label">(items)</span></span>
+                  <span>3</span>
+                </div>
+                <div class="cart-info-row">
+                  <span>Price <span class="cart-info-sub-label">(Total)</span></span>
+                  <span>$191.65</span>
+                </div>
+                <div class="cart-info-row">
+                  <span>Shipping</span>
+                  <span>$10.00</span>
+                </div>
+                <div class="cart-info-separate"></div>
+                <div class="cart-info-row">
+                  <span>Estimated Total</span>
+                  <span>$201.65</span>
+                </div>
+                <a href="./payment.html" class="btn btn-primary btn-rounded cart-info-next-btn">Continue to checkout</a>
+              </div>
+              <div class="cart-info">
+                <a href="#!">
+                  <article class="gift-item">
+                    <div class="gift-item-icon-wrap">
+                      <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M46.6666 28V51.3333H9.33325V28" stroke="#7644E1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M51.3334 16.3334H4.66675V28H51.3334V16.3334Z" stroke="#7644E1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M28 51.3334V16.3334" stroke="#7644E1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M28.0001 16.3333H17.5001C15.953 16.3333 14.4693 15.7187 13.3753 14.6247C12.2813 13.5308 11.6667 12.0471 11.6667 10.5C11.6667 8.95286 12.2813 7.46913 13.3753 6.37517C14.4693 5.28121 15.953 4.66663 17.5001 4.66663C25.6667 4.66663 28.0001 16.3333 28.0001 16.3333Z" stroke="#7644E1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M28 16.3333H38.5C40.0471 16.3333 41.5308 15.7187 42.6248 14.6247C43.7188 13.5308 44.3333 12.0471 44.3333 10.5C44.3333 8.95286 43.7188 7.46913 42.6248 6.37517C41.5308 5.28121 40.0471 4.66663 38.5 4.66663C30.3333 4.66663 28 16.3333 28 16.3333Z" stroke="#7644E1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                    </div>
+                    <div class="gift-item-content">
+                      <h3 class="gift-item-title">Send this order as a gift.</h3>
+                      <p class="gift-item-desc">Available items will be shipped to your gift recipient.
+                      </p>
+                    </div>
+                  </article>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    @@include('./partials/footer.html')
+
+    <!-- Modal : confirm delete shopping cart item -->
+
+    <div id="delete-confirm" class="modal modal-small hide">
+      <!-- <button class="modal-close">&times;</button> -->
+      <div class="modal-content">
+        <div class="modal-text">Do you want to delete this item ?</div>
+        <div class="modal-bottom">
+          <button class="btn btn-small btn-outline modal-btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
+          <button class="btn btn-small btn-danger  btn-primary modal-btn btn-no-margin js-toggle" toggle-target="#delete-confirm">Delete</button>
+        </div>
+      </div>
+      <div class="modal-overlay js-toggle" toggle-target="#delete-confirm"></div>
+    </div>
+
+    <!-- Modal : add new shopping address -->
+
+    <div id="add-new-address" class="modal hide" style="--content-width: 650px">
+      <!-- <button class="modal-close">&times;</button> -->
+      <div class="modal-content">
+        <form action="" class="form">
+        <h2 class="modal-heading">Add new shopping address</h2>
+        <div class="modal-body">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label form-label-small">Name</label>
+                <div class="form-text-input form-text-input-small">
+                  <input type="text" name="name" id="name" placeholder="Name" class="form-input" required minlength="2" />
+                 
+                  <svg
+                    class="form-input-icon-error"
+                    style="width: 20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                    />
+                  </svg>
+                </div>
+                <p class="form-error">Name must be at least 2 characters</p>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label form-label-small">Phone</label>
+                <div class="form-text-input form-text-input-small">
+                  <input type="tel" name="phone" id="phone" placeholder="Phone" class="form-input" required minlength="10" />
+                 
+                  <svg
+                    class="form-input-icon-error"
+                    style="width: 20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                    />
+                  </svg>
+
+
+                </div>
+                <p class="form-error">Phone must be at least 10 characters</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address" class="form-label form-label-small">Address</label>
+              <div class="form-text-area">
+                <textarea name="address" id="address" placeholder="Address (Area and street)" class="form-text-area-input" required ></textarea>
+               
+                <svg
+                  class="form-input-icon-error"
+                  style="width: 20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                  />
+                </svg>
+              </div>
+              <p class="form-error">Address not empty</p>
+            </div>
+            <div class="form-group">
+              <div class="form-text-input form-text-input-small">
+                <input id="city" name="" placeholder="City/ District/Town" readonly class="form-input js-toggle" toggle-target="#city-dialog" />
+               <div id="city-dialog" class="form-select-dialog hide">
+              <h2 class="form-dialog-heading d-none d-sm-block">City/ District/Town</h2>
+                <button class="form-close-dialog d-none d-sm-block js-toggle" toggle-target="#city-dialog">&times</button>
+                <div class="form-search">
+                  <input type="text" name="" placeholder="Search" class="form-search-input">
+                  <svg class="form-search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11.7666" cy="11.7666" r="8.98856" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M18.0183 18.4852L21.5423 22.0001" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </div>
+                <ul class="form-option-list">
+                  <li class="form-option">Ha Noi</li>
+                  <li class="form-option form-option-current">Ho Chi Minh</li>
+                  <li class="form-option">Da Nang</li>
+                  <li class="form-option">Ha Noi</li>
+                  <li class="form-option">Ho Chi Minh</li>
+                  <li class="form-option">Da Nang</li>
+                  <li class="form-option">Ha Noi</li>
+                  <li class="form-option">Ho Chi Minh</li>
+                  <li class="form-option">Da Nang</li>
+                  <li class="form-option">Ha Noi</li>
+                  <li class="form-option">Ho Chi Minh</li>
+                  <li class="form-option">Da Nang</li>
+                </ul>
+               </div>
+              </div>
+            </div>
+            <div class="form-group form-group-inline">
+              <label class="form-checkbox">
+                <input type="checkbox" name="" id="" class="form-checkbox-input d-none" />
+                <span class="form-checkbox-label">Set as default address</span>
+              </label>
+            </div>
+          </div>
+          <div class="modal-bottom">
+            <button class="btn btn-text modal-btn js-toggle" toggle-target="#add-new-address">Cancel</button>
+            <button class="btn btn-small btn-text btn-primary modal-btn btn-no-margin">Create</button>
+          </div>
+        </form>
+        </div>
+      <div class="modal-overlay"></div>
+    </div>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>

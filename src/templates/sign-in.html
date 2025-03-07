@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In | Grocerymart</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <meta name="theme-color" content="#77DAE6" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Main -->
+    <!-- @@include('./partials/components/header.html') -->
+    <!-- { "title": "Sign in page 123",
+    "className": "primary center" } -->
+
+    <main class="auth">
+      <!-- Auth intro -->
+      <div class="auth-intro d-md-none">
+        <!-- Logo -->
+
+        <img src="./assets/images/Sign up/auth-intro.png" alt="" class="auth-intro-img" />
+        <p class="auth-intro-text">The best of luxury brand values, high quality products, and innovative services</p>
+        
+      </div>
+      <!-- Auth content -->
+      <div class="auth-content">
+        <div class="auth-content-inner">
+          <!-- Logo -->
+          <a href="./" class="logo">
+            <img src="./assets/icon/logo.svg" alt="grocerymart" class="logo-img" />
+            <h2 class="logo-title">grocerymart</h2>
+          </a>
+          <h1 class="auth-heading">Hello Again!</h1>
+          <p class="auth-desc"> Welcome back to sign in. As a returning customer, you have access to your previously saved all information.</p>
+          <form action="./index-logined.html" class="form auth-form">
+            <div class="form-group">
+              <div class="form-text-input">
+                <input type="email" name="" id="" placeholder="Email" value="admin@gmail.com" class="form-input" required autofocus/>
+                <svg
+                  class="form-input-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.9024 8.85156L13.4591 12.4646C12.6196 13.1306 11.4384 13.1306 10.5989 12.4646L6.11816 8.85156"
+                    stroke="#9E9DA8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.9089 21C19.9502 21.0084 22 18.5095 22 15.4384V8.57001C22 5.49883 19.9502 3 16.9089 3H7.09114C4.04979 3 2 5.49883 2 8.57001V15.4384C2 18.5095 4.04979 21.0084 7.09114 21H16.9089Z"
+                    stroke="#9E9DA8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  class="form-input-icon-error"
+                  style="width: 20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                  />
+                </svg>
+              </div>
+              <p class="form-error">Email is not in correct format</p>
+            </div>
+            
+            <div class="form-group">
+              <div class="form-text-input">
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  placeholder="Confirm password"
+                  value="11111111"
+                  class="form-input"
+                  required
+                  minlength="6"
+                />
+                <svg
+                  class="form-input-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.4228 9.44804V7.30104C16.4228 4.78804 14.3848 2.75004 11.8718 2.75004C9.35876 2.73904 7.31276 4.76704 7.30176 7.28104V7.30104V9.44804"
+                    stroke="#9E9DA8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15.683 21.2498H8.042C5.948 21.2498 4.25 19.5528 4.25 17.4578V13.1688C4.25 11.0738 5.948 9.37683 8.042 9.37683H15.683C17.777 9.37683 19.475 11.0738 19.475 13.1688V17.4578C19.475 19.5528 17.777 21.2498 15.683 21.2498Z"
+                    stroke="#9E9DA8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.8623 14.2031V16.4241"
+                    stroke="#9E9DA8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  class="form-input-icon-error"
+                  style="width: 20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                  />
+                </svg>
+              </div>
+              <p class="form-error">Password must be at least 6 characters</p>
+            </div>
+            <div class="form-group form-group-inline">
+              <label class="form-checkbox">
+                <input type="checkbox" name="" id="" class="form-checkbox-input d-none" />
+                <span class="form-checkbox-label">Set as default card</span>
+              </label>
+              <a href="./reset-password.html" class="auth-link form-pull-right">Forgot Password</a>
+            </div>
+            <div class="form-group auth-btn-group">
+              <button class="btn btn-primary auth-btn form-submit-btn">Sign In</button>
+              <button class="btn btn-outline auth-btn btn-no-margin">
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_60918_5641)">
+                    <path
+                      d="M12.2045 11.0183H20.9315C20.9765 11.4041 21 11.8 21 12.205C21 14.9452 19.9977 17.2525 18.2611 18.82C16.7424 20.1942 14.6632 21 12.1841 21C10.978 21.0005 9.78353 20.7681 8.66909 20.316C7.55465 19.864 6.54204 19.2011 5.68912 18.3653C4.83621 17.5296 4.15971 16.5373 3.6983 15.4452C3.23688 14.353 2.9996 13.1825 3 12.0005C2.99946 10.8184 3.23665 9.64776 3.698 8.55554C4.15936 7.46331 4.83583 6.47089 5.68876 5.63501C6.54169 4.79913 7.55435 4.13618 8.66886 3.68405C9.78336 3.23192 10.9779 2.99947 12.1841 3C14.6591 3 16.7383 3.89203 18.3286 5.34434L16.8334 6.80868C15.6491 5.68712 14.0485 5.00457 12.2045 5.00457C11.2644 5.00457 10.3335 5.18604 9.46488 5.53863C8.5963 5.89121 7.80709 6.40801 7.1423 7.0595C6.47752 7.71099 5.95019 8.48443 5.59041 9.33565C5.23063 10.1869 5.04546 11.0992 5.04546 12.0205C5.04546 12.9419 5.23063 13.8542 5.59041 14.7054C5.95019 15.5567 6.47752 16.3301 7.1423 16.9816C7.80709 17.6331 8.5963 18.1499 9.46488 18.5025C10.3335 18.8551 11.2644 19.0365 12.2045 19.0365C15.8107 19.0365 18.4882 16.4226 18.931 13.0228H12.2045V11.0183Z"
+                      fill="#1A162E"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_60918_5641">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Sign in with Google</span>
+              </button>
+            </div>
+          </form>
+
+          <p class="auth-text">
+            Don’t have an account yet?
+            <a href="./sign-up.html" class="auth-link">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+@use "../abstracts";
+
+.auth {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    @supports (-webkit-touch-callout: none) {
+        min-height: -webkit-fill-available;
+    }
+
+    &-intro, &-content {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+                padding: 0 30px;
+    }
+
+
+    &-intro {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+                gap: 50px;
+                background: var(--auth-intro-bg);  
+
+
+        &-logo, &-next {
+            position: absolute;
+            left: 50%;
+            translate: -50%;
+        }
+        &-logo {
+            top: 80px;
+        }
+        &-next {
+            bottom: 50px;
+        }
+
+        &-img {
+            width: min(424px, 100%);
+        }
+
+        
+        &-text {
+             max-width: 412px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+    &-content {
+        background: var(--auth-content-bg);
+
+        @include abstracts.screen(md) {
+            overflow-y: auto;
+
+            &.hide {
+                translate: 100%;
+            }
+            position:fixed;
+            inset: 0;
+            z-index: 1;
+            -webkit-transition: translate, 0.3s;
+            -o-transition: translate, 0.3s;
+            transition: translate, 0.3s;
+        }
+
+        &-inner {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            text-align: center;
+            width: min(460px, 100%);
+            margin: 0 auto;
+            padding: 50px 0;
+            @include abstracts.screen(md) {
+                padding: 30px 0;
+            }
+        }
+    }
+
+    &-heading {
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 50px;
+        @include abstracts.screen(md) {
+            font-size: 22px;
+            margin-top: 30px;
+        }
+    }
+    &-desc {
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+        padding: 0 20px;
+        color: #9E9DA8;
+        @include abstracts.screen(md) {
+            font-size: 14px;
+        }
+    }
+
+    &-form {
+        width: 100%;
+        margin-top: 30px;
+        @include abstracts.screen(md) {
+            margin-top: 0;
+        }
+
+        &-forgot {
+            margin-top: 10px;
+        }
+    }
+    &-link {
+        font-size: 15px;
+        font-weight: 500;
+        color: #0071DC;
+        @include abstracts.screen(md) {
+            font-size: 14px;
+        }
+    }
+    &-btn-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+                gap: 30px;
+        margin-top: 50px;
+        @include abstracts.screen(md) {
+            margin-top: 40px;
+            gap: 20px;
+        }
+    }
+    &-btn {
+        width: 100%;
+    }
+    &-text  {
+        margin-top: 108px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #9E9DA8;
+        @include abstracts.screen(md) {
+            font-size: 16px;
+            margin-top: 30px;
+        }
+    }
+    &-message {
+        margin-top: 30px;
+    }
+}

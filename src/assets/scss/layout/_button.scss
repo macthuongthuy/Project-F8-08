@@ -1,0 +1,127 @@
+.btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+                    gap: 10px;
+    height: 46px;
+    background: #F8F8FB;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 0 20px;
+    white-space: nowrap;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    &-small {
+        height: 40px;
+    }
+
+    +.btn {
+        &:not(.btn-no-margin) {
+            margin-left: 20px;
+        }
+    }
+
+    &-text {
+        background: transparent;
+        font-weight: 400;
+    }
+
+    &-primary {
+        background: var(--color-btn-primary);
+    }
+
+    &-outline {
+        border: 1px solid #D2D1D6;
+        background: transparent;
+    }
+
+    &-rounded {
+        border-radius: 99px;
+        
+    }
+    &-danger {
+        color: #fff;
+        background: #ed4337;
+    }
+    &[disabled], &-disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    
+}
+
+
+.btn-border-left {
+    border-radius: 8px 0 0 8px;
+}
+.btn-border-right {
+    border-radius: 0 8px 8px 0;
+}
+
+// Filter btn
+
+.filter-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+    justify-content: center;
+    gap: 14px;
+    height: 36px;
+    border-radius: 6px;
+    background: var(--filter-form-btn);
+    padding: 0 14px;
+    
+}
+
+// Like-btn
+
+.like-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 20px 60px 6px var(--color-like-btn-shadow);
+            box-shadow: 0px 20px 60px 6px var(--color-like-btn-shadow);
+    background: var(--like-btn-bg);
+
+    &:not(&-liked) &-icon-liked {
+        display: none;
+    }
+    &-liked &-icon {
+        display: none;
+    }
+
+    &-icon-liked {
+        margin-top: 6px;
+    }
+
+}
+

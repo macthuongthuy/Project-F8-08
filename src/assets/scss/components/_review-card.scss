@@ -1,0 +1,91 @@
+@use "../abstracts";
+.review-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+    border-radius: 16px;
+    background: var(--review-card-bg);
+
+    &-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 20px;
+        @include abstracts.screen(md) {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: initial;
+            -ms-flex-align: initial;
+            align-items: initial;
+            text-align: initial;
+        }
+        @include abstracts.screen(xl) {
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+    &-title {
+        font-size: 22px;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+    &-desc {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &-rating {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 8px;
+        padding-top: 20px;
+        margin-top: auto;
+        @include abstracts.screen(xl) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+        @include abstracts.screen(md) {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+        &-title {
+            padding-left: 12px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+    &-star-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 8px;
+    }
+}

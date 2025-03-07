@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add new card | Grocerymart</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <meta name="theme-color" content="#77DAE6" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+  <div class="container">
+    <div class="top-bar">
+      <!-- More menu -->
+      <button class="top-bar-more d-none d-lg-block js-toggle" toggle-target="#navbar">
+        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 4.5H6" stroke="#1A162E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 12H6" stroke="#1A162E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M11 19H6" stroke="#1A162E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <!-- Logo -->
+
+      <a href="./" class="logo top-bar-logo">
+        <img src="./assets/icon/logo.svg" alt="grocerymart" class="logo-img top-bar-logo-img" />
+        <h1 class="logo-title top-bar-logo-title">grocerymart</h1>
+      </a>
+
+      <!-- Navbar -->
+
+      <nav id="navbar" class="navbar show">
+        <button class="navbar-close-btn js-toggle" toggle-target="#navbar">
+          <svg class="icon" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.25 7.27539L16.25 7.27539"
+              stroke="#1A162E"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M7.2998 13.299L1.2498 7.275L7.2998 1.25"
+              stroke="#1A162E"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <a href="./checkout.html" class="nav-btn d-none d-md-flex">
+          <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.75 3.25L4.83 3.61L5.793 15.083C5.87 16.02 6.653 16.739 7.593 16.736H18.502C19.399 16.738 20.16 16.078 20.287 15.19L21.236 8.632C21.342 7.899 20.833 7.219 20.101 7.113C20.037 7.104 5.164 7.099 5.164 7.099"
+              stroke="#1A162E"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M14.125 10.7949H16.898"
+              stroke="#1A162E"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.15435 20.2031C7.45535 20.2031 7.69835 20.4471 7.69835 20.7471C7.69835 21.0481 7.45535 21.2921 7.15435 21.2921C6.85335 21.2921 6.61035 21.0481 6.61035 20.7471C6.61035 20.4471 6.85335 20.2031 7.15435 20.2031Z"
+              fill="#1A162E"
+              stroke="#1A162E"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M18.4346 20.2031C18.7356 20.2031 18.9796 20.4471 18.9796 20.7471C18.9796 21.0481 18.7356 21.2921 18.4346 21.2921C18.1336 21.2921 17.8906 21.0481 17.8906 20.7471C17.8906 20.4471 18.1336 20.2031 18.4346 20.2031Z"
+              fill="#1A162E"
+              stroke="#1A162E"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="nav-btn-title">Cart</span>
+          <span class="nav-btn-qnt">3</span>
+        </a>
+        <a href="./favourite.html" class="nav-btn d-none d-md-flex">
+          <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2.87187 11.5983C1.79887 8.24832 3.05287 4.41932 6.56987 3.28632C8.41987 2.68932 10.4619 3.04132 11.9999 4.19832C13.4549 3.07332 15.5719 2.69332 17.4199 3.28632C20.9369 4.41932 22.1989 8.24832 21.1269 11.5983C19.4569 16.9083 11.9999 20.9983 11.9999 20.9983C11.9999 20.9983 4.59787 16.9703 2.87187 11.5983Z"
+              stroke="#1A162E"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16 6.69922C17.07 7.04522 17.826 8.00022 17.917 9.12122"
+              stroke="#1A162E"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="nav-btn-title">Favorite</span>
+          <span class="nav-btn-qnt">3</span>
+        </a>
+
+        <ul class="navbar-list js-dropdown-list">
+          <li class="navbar-item">
+            <a href="#!" class="navbar-link">
+              Departments
+              <img src="./assets/icon/arrow-down.svg" alt="" class="navbar-arrow icon" />
+            </a>
+            <!-- Dropdown 1-->
+            <div class="dropdown js-dropdown">
+              <div class="dropdown-inner">
+                <div class="top-menu">
+                  <div class="top-menu-main">
+                    <div class="menu-column">
+                      <div class="menu-column-icon d-lg-none">
+                        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="15" cy="15" r="15" fill="#FFB700" />
+                          <circle cx="15" cy="15" r="15" fill="white" fill-opacity="0.5" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15 18.5C15 15.8748 15.0281 15 18.5 15C21.9719 15 22 15.8748 22 18.5C22 21.1252 22.0111 22 18.5 22C14.9889 22 15 21.1252 15 18.5Z"
+                            stroke="#1A162E"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M26 18.5C26 15.8748 26.0281 15 29.5 15C32.9719 15 33 15.8748 33 18.5C33 21.1252 33.0111 22 29.5 22C25.9889 22 26 21.1252 26 18.5Z"
+                            stroke="#1A162E"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M15 29.5C15 26.8748 15.0281 26 18.5 26C21.9719 26 22 26.8748 22 29.5C22 32.1252 22.0111 33 18.5 33C14.9889 33 15 32.1252 15 29.5Z"
+                            stroke="#1A162E"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M26 29.5C26 26.8748 26.0281 26 29.5 26C32.9719 26 33 26.8748 33 29.5C33 32.1252 33.0111 33 29.5 33C25.9889 33 26 32.1252 26 29.5Z"
+                            stroke="#1A162E"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="menu-column-content">
+                        <h2 class="menu-column-heading d-lg-none">All Departments</h2>
+                        <ul class="menu-column-list js-menu-list">
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Savings & Featured Shops </a>
+
+                            <div class="sub-menu">
+                              <!-- Sub-menu-column 1 -->
+                              <div class="sub-menu-column">
+                                <!-- Menu 1.1 -->
+                                <div class="menu-column">
+                                  <div class="menu-column-icon">
+                                    <svg
+                                      width="36"
+                                      height="36"
+                                      viewBox="0 0 36 36"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <rect width="30" height="30" rx="5" fill="#7644E1" />
+                                      <rect width="30" height="30" rx="5" fill="white" fill-opacity="0.3" />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M28.4283 29.5892C25.4231 29.6401 22.473 29.638 19.5727 29.5892C16.3535 29.5892 14 27.293 14 24.1379V19.4883C14 16.3332 16.3535 14.037 19.5727 14.037C22.4889 13.9871 25.4411 13.9882 28.4283 14.037C31.6476 14.037 34 16.3343 34 19.4883V24.1379C34 27.293 31.6476 29.5892 28.4283 29.5892Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M27 21.9951C27 21.184 22.8425 18.5891 22.3709 19.0557C21.8993 19.5223 21.8539 24.424 22.3709 24.9346C22.8879 25.4469 27 22.8063 27 21.9951Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path d="M24 30V34H20H28" stroke="#1A162E" stroke-width="1.5" />
+                                    </svg>
+                                  </div>
+                                  <div class="menu-column-content">
+                                    <h2 class="menu-column-heading">TV & Video</h2>
+                                    <ul class="menu-column-list">
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Shop all TVs </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> TVs by Size </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Smart TVs </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Roku TVs </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Streaming </a>
+                                      </li>
+
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> TV Mounts & Accessories </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <!-- Menu 1.2 -->
+                                <div class="menu-column">
+                                  <div class="menu-column-icon">
+                                    <svg
+                                      width="36"
+                                      height="36"
+                                      viewBox="0 0 36 36"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M17.0489 2.92705C17.3483 2.00574 18.6517 2.00574 18.9511 2.92705L21.8167 11.7467C21.9506 12.1587 22.3346 12.4377 22.7678 12.4377H32.0413C33.0101 12.4377 33.4128 13.6773 32.6291 14.2467L25.1267 19.6976C24.7762 19.9522 24.6295 20.4036 24.7634 20.8156L27.6291 29.6353C27.9284 30.5566 26.874 31.3227 26.0902 30.7533L18.5878 25.3024C18.2373 25.0478 17.7627 25.0478 17.4122 25.3024L9.90976 30.7533C9.12605 31.3227 8.07157 30.5566 8.37092 29.6353L11.2366 20.8156C11.3705 20.4036 11.2238 19.9522 10.8733 19.6976L3.37088 14.2467C2.58717 13.6773 2.98994 12.4377 3.95867 12.4377H13.2322C13.6654 12.4377 14.0494 12.1587 14.1833 11.7467L17.0489 2.92705Z"
+                                        fill="#0071DC"
+                                      />
+                                      <path
+                                        d="M17.0489 2.92705C17.3483 2.00574 18.6517 2.00574 18.9511 2.92705L21.8167 11.7467C21.9506 12.1587 22.3346 12.4377 22.7678 12.4377H32.0413C33.0101 12.4377 33.4128 13.6773 32.6291 14.2467L25.1267 19.6976C24.7762 19.9522 24.6295 20.4036 24.7634 20.8156L27.6291 29.6353C27.9284 30.5566 26.874 31.3227 26.0902 30.7533L18.5878 25.3024C18.2373 25.0478 17.7627 25.0478 17.4122 25.3024L9.90976 30.7533C9.12605 31.3227 8.07157 30.5566 8.37092 29.6353L11.2366 20.8156C11.3705 20.4036 11.2238 19.9522 10.8733 19.6976L3.37088 14.2467C2.58717 13.6773 2.98994 12.4377 3.95867 12.4377H13.2322C13.6654 12.4377 14.0494 12.1587 14.1833 11.7467L17.0489 2.92705Z"
+                                        fill="white"
+                                        fill-opacity="0.6"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M28.4283 29.5892C25.4231 29.6401 22.473 29.638 19.5727 29.5892C16.3535 29.5892 14 27.293 14 24.1379V19.4883C14 16.3332 16.3535 14.037 19.5727 14.037C22.4889 13.9871 25.4411 13.9882 28.4283 14.037C31.6476 14.037 34 16.3343 34 19.4883V24.1379C34 27.293 31.6476 29.5892 28.4283 29.5892Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M27 21.9951C27 21.184 22.8425 18.5891 22.3709 19.0557C21.8993 19.5223 21.8539 24.424 22.3709 24.9346C22.8879 25.4469 27 22.8063 27 21.9951Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path d="M24 30V34H20H28" stroke="#1A162E" stroke-width="1.5" />
+                                    </svg>
+                                  </div>
+                                  <div class="menu-column-content">
+                                    <h2 class="menu-column-heading">Wearable Technology</h2>
+                                    <ul class="menu-column-list">
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Galaxy Watch </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Apple Watch </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Fitness Trackers </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Virtual Reality </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Sub-menu-column 2 -->
+                              <div class="sub-menu-column">
+                                <div class="menu-column">
+                                  <div class="menu-column-icon">
+                                    <svg
+                                      width="35"
+                                      height="36"
+                                      viewBox="0 0 35 36"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M14.4019 4.5C15.5566 2.5 18.4434 2.5 19.5981 4.5L29.1244 21C30.2791 23 28.8357 25.5 26.5263 25.5H7.47372C5.16432 25.5 3.72094 23 4.87564 21L14.4019 4.5Z"
+                                        fill="#F94545"
+                                      />
+                                      <path
+                                        d="M14.4019 4.5C15.5566 2.5 18.4434 2.5 19.5981 4.5L29.1244 21C30.2791 23 28.8357 25.5 26.5263 25.5H7.47372C5.16432 25.5 3.72094 23 4.87564 21L14.4019 4.5Z"
+                                        fill="white"
+                                        fill-opacity="0.3"
+                                      />
+                                      <path
+                                        d="M23.7 19H13.3C12.582 19 12 19.5756 12 20.2857V26.7143C12 27.4244 12.582 28 13.3 28H23.7C24.418 28 25 27.4244 25 26.7143V20.2857C25 19.5756 24.418 19 23.7 19Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M33 19H28C27.4477 19 27 19.582 27 20.3V30.7C27 31.418 27.4477 32 28 32H33C33.5523 32 34 31.418 34 30.7V20.3C34 19.582 33.5523 19 33 19Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M30.5 22.5H30.51"
+                                        stroke="#1A162E"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M15 32H22"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M18.5 28V32"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                  </div>
+                                  <div class="menu-column-content">
+                                    <h2 class="menu-column-heading">Computers</h2>
+                                    <ul class="menu-column-list">
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Shop All Computers </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Laptops </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> PC Gaming </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Monitors </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Chromebook </a>
+                                      </li>
+
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Printers & Ink </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Shop all TVs </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Computer Accessories </a>
+                                      </li>
+
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Tax Software </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Computer Software </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> PC Finder </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Sub-menu-column 3 -->
+                              <div class="sub-menu-column">
+                                <!-- Menu 3.1 -->
+                                <div class="menu-column">
+                                  <div class="menu-column-icon">
+                                    <svg
+                                      width="36"
+                                      height="36"
+                                      viewBox="0 0 36 36"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M7.5 27.9904C9.86806 29.3576 12.5648 30.0515 15.2987 29.997C18.0325 29.9426 20.6995 29.1419 23.0113 27.6815C25.323 26.2211 27.1916 24.1565 28.415 21.7111C29.6384 19.2656 30.17 16.5322 29.9524 13.8065C29.7349 11.0808 28.7764 8.46636 27.1806 6.24592C25.5848 4.02548 23.4123 2.2835 20.8982 1.20829C18.3841 0.133086 15.6238 -0.234428 12.916 0.145481C10.2081 0.525389 7.65554 1.63827 5.53434 3.3638L15 15L7.5 27.9904Z"
+                                        fill="#67B044"
+                                      />
+                                      <path
+                                        d="M7.5 27.9904C9.86806 29.3576 12.5648 30.0515 15.2987 29.997C18.0325 29.9426 20.6995 29.1419 23.0113 27.6815C25.323 26.2211 27.1916 24.1565 28.415 21.7111C29.6384 19.2656 30.17 16.5322 29.9524 13.8065C29.7349 11.0808 28.7764 8.46636 27.1806 6.24592C25.5848 4.02548 23.4123 2.2835 20.8982 1.20829C18.3841 0.133086 15.6238 -0.234428 12.916 0.145481C10.2081 0.525389 7.65554 1.63827 5.53434 3.3638L15 15L7.5 27.9904Z"
+                                        fill="white"
+                                        fill-opacity="0.2"
+                                      />
+                                      <path
+                                        d="M16 15H32C32.5304 15 33.0391 15.2107 33.4142 15.5858C33.7893 15.9609 34 16.4696 34 17V23C34 25.6522 32.9464 28.1957 31.0711 30.0711C29.1957 31.9464 26.6522 33 24 33C22.6868 33 21.3864 32.7413 20.1732 32.2388C18.9599 31.7362 17.8575 30.9997 16.9289 30.0711C15.0536 28.1957 14 25.6522 14 23V17C14 16.4696 14.2107 15.9609 14.5858 15.5858C14.9609 15.2107 15.4696 15 16 15V15Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M20 22L24 26L28 22"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                  </div>
+                                  <div class="menu-column-content">
+                                    <h2 class="menu-column-heading">Savings</h2>
+                                    <ul class="menu-column-list">
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Tech Savings </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Overstock Savings </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Tech Rollbacks </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Electronics </a>
+
+                            <!-- Sub-menu -->
+                            <div class="sub-menu">
+                              <!-- Sub-menu-column 1 -->
+                              <div class="sub-menu-column">
+                                <!-- Menu 1.1 -->
+                                <div class="menu-column">
+                                  <div class="menu-column-icon">
+                                    <svg
+                                      width="36"
+                                      height="36"
+                                      viewBox="0 0 36 36"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <rect width="30" height="30" rx="5" fill="#7644E1" />
+                                      <rect width="30" height="30" rx="5" fill="white" fill-opacity="0.3" />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M28.4283 29.5892C25.4231 29.6401 22.473 29.638 19.5727 29.5892C16.3535 29.5892 14 27.293 14 24.1379V19.4883C14 16.3332 16.3535 14.037 19.5727 14.037C22.4889 13.9871 25.4411 13.9882 28.4283 14.037C31.6476 14.037 34 16.3343 34 19.4883V24.1379C34 27.293 31.6476 29.5892 28.4283 29.5892Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M27 21.9951C27 21.184 22.8425 18.5891 22.3709 19.0557C21.8993 19.5223 21.8539 24.424 22.3709 24.9346C22.8879 25.4469 27 22.8063 27 21.9951Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path d="M24 30V34H20H28" stroke="#1A162E" stroke-width="1.5" />
+                                    </svg>
+                                  </div>
+                                  <div class="menu-column-content">
+                                    <h2 class="menu-column-heading">TV & Video</h2>
+                                    <ul class="menu-column-list">
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Shop all TVs </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> TVs by Size </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Smart TVs </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Roku TVs </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Streaming </a>
+                                      </li>
+
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> TV Mounts & Accessories </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> DVD & Blu-Ray Players </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <!-- Menu 1.2 -->
+                                <div class="menu-column">
+                                  <div class="menu-column-icon">
+                                    <svg
+                                      width="36"
+                                      height="36"
+                                      viewBox="0 0 36 36"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M17.0489 2.92705C17.3483 2.00574 18.6517 2.00574 18.9511 2.92705L21.8167 11.7467C21.9506 12.1587 22.3346 12.4377 22.7678 12.4377H32.0413C33.0101 12.4377 33.4128 13.6773 32.6291 14.2467L25.1267 19.6976C24.7762 19.9522 24.6295 20.4036 24.7634 20.8156L27.6291 29.6353C27.9284 30.5566 26.874 31.3227 26.0902 30.7533L18.5878 25.3024C18.2373 25.0478 17.7627 25.0478 17.4122 25.3024L9.90976 30.7533C9.12605 31.3227 8.07157 30.5566 8.37092 29.6353L11.2366 20.8156C11.3705 20.4036 11.2238 19.9522 10.8733 19.6976L3.37088 14.2467C2.58717 13.6773 2.98994 12.4377 3.95867 12.4377H13.2322C13.6654 12.4377 14.0494 12.1587 14.1833 11.7467L17.0489 2.92705Z"
+                                        fill="#0071DC"
+                                      />
+                                      <path
+                                        d="M17.0489 2.92705C17.3483 2.00574 18.6517 2.00574 18.9511 2.92705L21.8167 11.7467C21.9506 12.1587 22.3346 12.4377 22.7678 12.4377H32.0413C33.0101 12.4377 33.4128 13.6773 32.6291 14.2467L25.1267 19.6976C24.7762 19.9522 24.6295 20.4036 24.7634 20.8156L27.6291 29.6353C27.9284 30.5566 26.874 31.3227 26.0902 30.7533L18.5878 25.3024C18.2373 25.0478 17.7627 25.0478 17.4122 25.3024L9.90976 30.7533C9.12605 31.3227 8.07157 30.5566 8.37092 29.6353L11.2366 20.8156C11.3705 20.4036 11.2238 19.9522 10.8733 19.6976L3.37088 14.2467C2.58717 13.6773 2.98994 12.4377 3.95867 12.4377H13.2322C13.6654 12.4377 14.0494 12.1587 14.1833 11.7467L17.0489 2.92705Z"
+                                        fill="white"
+                                        fill-opacity="0.6"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M28.4283 29.5892C25.4231 29.6401 22.473 29.638 19.5727 29.5892C16.3535 29.5892 14 27.293 14 24.1379V19.4883C14 16.3332 16.3535 14.037 19.5727 14.037C22.4889 13.9871 25.4411 13.9882 28.4283 14.037C31.6476 14.037 34 16.3343 34 19.4883V24.1379C34 27.293 31.6476 29.5892 28.4283 29.5892Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M27 21.9951C27 21.184 22.8425 18.5891 22.3709 19.0557C21.8993 19.5223 21.8539 24.424 22.3709 24.9346C22.8879 25.4469 27 22.8063 27 21.9951Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path d="M24 30V34H20H28" stroke="#1A162E" stroke-width="1.5" />
+                                    </svg>
+                                  </div>
+                                  <div class="menu-column-content">
+                                    <h2 class="menu-column-heading">Wearable Technology</h2>
+                                    <ul class="menu-column-list">
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Galaxy Watch </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Apple Watch </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Fitness Trackers </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Virtual Reality </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Headphones </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Sub-menu-column 2 -->
+                              <div class="sub-menu-column">
+                                <div class="menu-column">
+                                  <div class="menu-column-icon">
+                                    <svg
+                                      width="35"
+                                      height="36"
+                                      viewBox="0 0 35 36"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M14.4019 4.5C15.5566 2.5 18.4434 2.5 19.5981 4.5L29.1244 21C30.2791 23 28.8357 25.5 26.5263 25.5H7.47372C5.16432 25.5 3.72094 23 4.87564 21L14.4019 4.5Z"
+                                        fill="#F94545"
+                                      />
+                                      <path
+                                        d="M14.4019 4.5C15.5566 2.5 18.4434 2.5 19.5981 4.5L29.1244 21C30.2791 23 28.8357 25.5 26.5263 25.5H7.47372C5.16432 25.5 3.72094 23 4.87564 21L14.4019 4.5Z"
+                                        fill="white"
+                                        fill-opacity="0.3"
+                                      />
+                                      <path
+                                        d="M23.7 19H13.3C12.582 19 12 19.5756 12 20.2857V26.7143C12 27.4244 12.582 28 13.3 28H23.7C24.418 28 25 27.4244 25 26.7143V20.2857C25 19.5756 24.418 19 23.7 19Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M33 19H28C27.4477 19 27 19.582 27 20.3V30.7C27 31.418 27.4477 32 28 32H33C33.5523 32 34 31.418 34 30.7V20.3C34 19.582 33.5523 19 33 19Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M30.5 22.5H30.51"
+                                        stroke="#1A162E"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M15 32H22"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M18.5 28V32"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                  </div>
+                                  <div class="menu-column-content">
+                                    <h2 class="menu-column-heading">Computers</h2>
+                                    <ul class="menu-column-list">
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Shop All Computers </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Laptops </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> PC Gaming </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Monitors </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Chromebook </a>
+                                      </li>
+
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Printers & Ink </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Shop all TVs </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Computer Accessories </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Desktops </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Tax Software </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Computer Software </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> PC Finder </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Sub-menu-column 3 -->
+                              <div class="sub-menu-column">
+                                <!-- Menu 3.1 -->
+                                <div class="menu-column">
+                                  <div class="menu-column-icon">
+                                    <svg
+                                      width="36"
+                                      height="36"
+                                      viewBox="0 0 36 36"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M7.5 27.9904C9.86806 29.3576 12.5648 30.0515 15.2987 29.997C18.0325 29.9426 20.6995 29.1419 23.0113 27.6815C25.323 26.2211 27.1916 24.1565 28.415 21.7111C29.6384 19.2656 30.17 16.5322 29.9524 13.8065C29.7349 11.0808 28.7764 8.46636 27.1806 6.24592C25.5848 4.02548 23.4123 2.2835 20.8982 1.20829C18.3841 0.133086 15.6238 -0.234428 12.916 0.145481C10.2081 0.525389 7.65554 1.63827 5.53434 3.3638L15 15L7.5 27.9904Z"
+                                        fill="#67B044"
+                                      />
+                                      <path
+                                        d="M7.5 27.9904C9.86806 29.3576 12.5648 30.0515 15.2987 29.997C18.0325 29.9426 20.6995 29.1419 23.0113 27.6815C25.323 26.2211 27.1916 24.1565 28.415 21.7111C29.6384 19.2656 30.17 16.5322 29.9524 13.8065C29.7349 11.0808 28.7764 8.46636 27.1806 6.24592C25.5848 4.02548 23.4123 2.2835 20.8982 1.20829C18.3841 0.133086 15.6238 -0.234428 12.916 0.145481C10.2081 0.525389 7.65554 1.63827 5.53434 3.3638L15 15L7.5 27.9904Z"
+                                        fill="white"
+                                        fill-opacity="0.2"
+                                      />
+                                      <path
+                                        d="M16 15H32C32.5304 15 33.0391 15.2107 33.4142 15.5858C33.7893 15.9609 34 16.4696 34 17V23C34 25.6522 32.9464 28.1957 31.0711 30.0711C29.1957 31.9464 26.6522 33 24 33C22.6868 33 21.3864 32.7413 20.1732 32.2388C18.9599 31.7362 17.8575 30.9997 16.9289 30.0711C15.0536 28.1957 14 25.6522 14 23V17C14 16.4696 14.2107 15.9609 14.5858 15.5858C14.9609 15.2107 15.4696 15 16 15V15Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M20 22L24 26L28 22"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                  </div>
+                                  <div class="menu-column-content">
+                                    <h2 class="menu-column-heading">Savings</h2>
+                                    <ul class="menu-column-list">
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Tech Savings </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Overstock Savings </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Tech Rollbacks </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+
+                                <!-- Menu 3.2 -->
+                                <div class="menu-column">
+                                  <div class="menu-column-icon">
+                                    <svg
+                                      width="33"
+                                      height="36"
+                                      viewBox="0 0 33 36"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M13.5 0.866025C14.4282 0.330127 15.5718 0.330127 16.5 0.866025L26.4904 6.63397C27.4186 7.16987 27.9904 8.16025 27.9904 9.23205V20.768C27.9904 21.8397 27.4186 22.8301 26.4904 23.366L16.5 29.134C15.5718 29.6699 14.4282 29.6699 13.5 29.134L3.50962 23.366C2.58142 22.8301 2.00962 21.8397 2.00962 20.768V9.23205C2.00962 8.16025 2.58142 7.16987 3.50962 6.63397L13.5 0.866025Z"
+                                        fill="#7644E1"
+                                      />
+                                      <path
+                                        d="M13.5 0.866025C14.4282 0.330127 15.5718 0.330127 16.5 0.866025L26.4904 6.63397C27.4186 7.16987 27.9904 8.16025 27.9904 9.23205V20.768C27.9904 21.8397 27.4186 22.8301 26.4904 23.366L16.5 29.134C15.5718 29.6699 14.4282 29.6699 13.5 29.134L3.50962 23.366C2.58142 22.8301 2.00962 21.8397 2.00962 20.768V9.23205C2.00962 8.16025 2.58142 7.16987 3.50962 6.63397L13.5 0.866025Z"
+                                        fill="white"
+                                        fill-opacity="0.4"
+                                      />
+                                      <path
+                                        d="M26 14H16C14.8954 14 14 14.8954 14 16V32C14 33.1046 14.8954 34 16 34H26C27.1046 34 28 33.1046 28 32V16C28 14.8954 27.1046 14 26 14Z"
+                                        stroke="#1A162E"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                      <path
+                                        d="M21 30H21.01"
+                                        stroke="#1A162E"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                      />
+                                    </svg>
+                                  </div>
+                                  <div class="menu-column-content">
+                                    <h2 class="menu-column-heading">Cell Phones</h2>
+                                    <ul class="menu-column-list">
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Wireless Deals </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> 5G Phones </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Prepaid Phones & Plans </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Refurbished Phones </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> iPhone Accessories </a>
+                                      </li>
+
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Cases & Screen Protectors </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Walmart Protection Plan </a>
+                                      </li>
+                                      <li class="menu-column-item">
+                                        <a href="#!" class="menu-column-link"> Unlocked Phones </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Clothing, Shoes & Accessories </a>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Home, Furniture & Appliances </a>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Toys & Video Games </a>
+                          </li>
+
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Home Improvement </a>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Baby </a>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Household Essentials </a>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Personal Care </a>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Patio & Garden </a>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Sports & Outdoors </a>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Gift Cards </a>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Auto, Tires and Industrial </a>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Movies, Music & Books </a>
+                          </li>
+                          <li class="menu-column-item">
+                            <a href="#!" class="menu-column-link"> Movies, Music & Books </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="navbar-item">
+            <a href="#!" class="navbar-link">
+              Grocery
+              <img src="./assets/icon/arrow-down.svg" alt="" class="navbar-arrow icon" />
+            </a>
+            <!-- Dropdown 2-->
+            <div class="dropdown js-dropdown">
+              <div class="dropdown-inner">
+                <div class="top-menu">
+                  <!-- Sub-menu -->
+                  <div class="sub-menu sub-menu-not-main">
+                    <!-- Sub-menu-column 1 -->
+                    <div class="sub-menu-column">
+                      <!-- Menu 1.1 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect width="30" height="30" rx="5" fill="#7644E1" />
+                            <rect width="30" height="30" rx="5" fill="white" fill-opacity="0.4" />
+                            <path
+                              d="M14.75 15.25L16.83 15.61L17.793 27.083C17.87 28.02 18.653 28.739 19.593 28.736H30.502C31.399 28.738 32.16 28.078 32.287 27.19L33.236 20.632C33.342 19.899 32.833 19.219 32.101 19.113C32.037 19.104 17.164 19.099 17.164 19.099"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M26.125 22.7949H28.898"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M19.1544 32.2031C19.4554 32.2031 19.6984 32.4471 19.6984 32.7471C19.6984 33.0481 19.4554 33.2921 19.1544 33.2921C18.8534 33.2921 18.6104 33.0481 18.6104 32.7471C18.6104 32.4471 18.8534 32.2031 19.1544 32.2031Z"
+                              fill="#1A162E"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M30.4346 32.2031C30.7356 32.2031 30.9796 32.4471 30.9796 32.7471C30.9796 33.0481 30.7356 33.2921 30.4346 33.2921C30.1336 33.2921 29.8906 33.0481 29.8906 32.7471C29.8906 32.4471 30.1336 32.2031 30.4346 32.2031Z"
+                              fill="#1A162E"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Grocery</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Shop all </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Grilling Foods </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Spring Flavors </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- Menu 1.2 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M17.0489 2.92705C17.3483 2.00574 18.6517 2.00574 18.9511 2.92705L21.8167 11.7467C21.9506 12.1587 22.3346 12.4377 22.7678 12.4377H32.0413C33.0101 12.4377 33.4128 13.6773 32.6291 14.2467L25.1267 19.6976C24.7762 19.9522 24.6295 20.4036 24.7634 20.8156L27.6291 29.6353C27.9284 30.5566 26.874 31.3227 26.0902 30.7533L18.5878 25.3024C18.2373 25.0478 17.7627 25.0478 17.4122 25.3024L9.90976 30.7533C9.12605 31.3227 8.07157 30.5566 8.37092 29.6353L11.2366 20.8156C11.3705 20.4036 11.2238 19.9522 10.8733 19.6976L3.37088 14.2467C2.58717 13.6773 2.98994 12.4377 3.95867 12.4377H13.2322C13.6654 12.4377 14.0494 12.1587 14.1833 11.7467L17.0489 2.92705Z"
+                              fill="#67B044"
+                            />
+                            <path
+                              d="M17.0489 2.92705C17.3483 2.00574 18.6517 2.00574 18.9511 2.92705L21.8167 11.7467C21.9506 12.1587 22.3346 12.4377 22.7678 12.4377H32.0413C33.0101 12.4377 33.4128 13.6773 32.6291 14.2467L25.1267 19.6976C24.7762 19.9522 24.6295 20.4036 24.7634 20.8156L27.6291 29.6353C27.9284 30.5566 26.874 31.3227 26.0902 30.7533L18.5878 25.3024C18.2373 25.0478 17.7627 25.0478 17.4122 25.3024L9.90976 30.7533C9.12605 31.3227 8.07157 30.5566 8.37092 29.6353L11.2366 20.8156C11.3705 20.4036 11.2238 19.9522 10.8733 19.6976L3.37088 14.2467C2.58717 13.6773 2.98994 12.4377 3.95867 12.4377H13.2322C13.6654 12.4377 14.0494 12.1587 14.1833 11.7467L17.0489 2.92705Z"
+                              fill="white"
+                              fill-opacity="0.6"
+                            />
+                            <path
+                              d="M23.4857 33.9989C18.9511 33.9989 15.7156 32.7927 14.1224 30.5248C12.7498 28.5464 12.6272 25.9168 13.8039 22.9011C14.5883 20.8503 16.8187 19.4512 19.3434 19.4512C21.2308 19.4512 23.118 20.2233 24.7113 21.6467C25.5202 21.0194 27.4321 19.7408 29.5155 19.7408C31.4274 19.7408 32.947 20.7781 34.0501 22.8048C35.3001 25.145 35.3247 27.5335 34.0746 29.5841C32.3586 32.3826 28.5105 33.9992 23.4857 33.9992L23.4857 33.9989ZM19.3432 20.5609C17.2843 20.5609 15.4705 21.6708 14.8332 23.2872C14.1224 25.1449 13.5831 27.7987 15.0293 29.8976C16.4019 31.8518 19.3187 32.8892 23.4856 32.8892C28.0937 32.8892 31.6234 31.4659 33.1185 29.005C34.148 27.3162 34.1235 25.2897 33.0695 23.3113C32.1871 21.6466 30.9859 20.8264 29.5398 20.8264C27.2848 20.8264 25.1033 22.7565 25.0788 22.7805C24.8582 22.9735 24.5151 22.9735 24.319 22.7565C22.4317 20.9469 20.5689 20.5608 19.3432 20.5608L19.3432 20.5609Z"
+                              fill="#1A162E"
+                            />
+                            <path
+                              d="M24.7845 20.6841C24.711 20.6841 24.6619 20.6841 24.5884 20.6601C24.3923 20.5877 24.2453 20.4187 24.2208 20.2016C24.1964 19.9845 23.9756 18.0062 24.9806 16.8723C25.3973 16.3898 25.9856 16.1484 26.6964 16.1484H26.7208C29.2699 16.1725 30.9367 17.7408 31.0103 17.8132C31.1819 17.9821 31.2308 18.2473 31.1083 18.4646C30.9857 18.6817 30.7407 18.8023 30.4955 18.73C30.2258 18.6817 29.9318 18.6336 29.6621 18.6336C27.3336 18.6336 25.1766 20.5154 25.1521 20.5154C25.0541 20.6359 24.9071 20.6841 24.7845 20.6841L24.7845 20.6841ZM26.7208 17.2583C26.3286 17.2583 26.059 17.379 25.8384 17.596C25.5197 17.9338 25.3973 18.5129 25.3482 19.0194C26.1327 18.5127 27.3092 17.8614 28.6574 17.6201C28.1181 17.4271 27.4563 17.2583 26.7209 17.2583L26.7208 17.2583Z"
+                              fill="#1A162E"
+                            />
+                            <path
+                              d="M22.8974 19.4524H22.8239C19.1717 19.0423 17.3334 15.9299 16.9902 15.2787C16.598 14.9409 16.598 14.6272 16.6715 14.4342C16.7206 14.3135 16.8676 14 17.3822 14C17.6274 14 18.1176 14.0483 19.5637 14.5548C23.0691 15.7611 23.4367 18.7286 23.4611 18.8492C23.4856 19.0182 23.4121 19.187 23.2895 19.3077C23.1915 19.4041 23.0445 19.4524 22.8974 19.4524L22.8974 19.4524ZM18.3383 15.3268C18.902 16.1713 20.1766 17.667 22.1376 18.2218C21.8189 17.4257 21.0346 16.2434 19.2207 15.6163C18.8531 15.4715 18.5589 15.3751 18.3383 15.3268V15.3268Z"
+                              fill="#1A162E"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Fresh Produce</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Shop All </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Celebrate Salad Month </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Healthy Living </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Fresh Flowers </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Chilled Dressing </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Fresh Fruit </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Salad Kits & Bowls </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Organic Produce </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Fresh Vegetables </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Sub-menu-column 2 -->
+                    <div class="sub-menu-column">
+                      <!-- Menu 2.1 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="35"
+                            height="36"
+                            viewBox="0 0 35 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g opacity="0.5">
+                              <path
+                                d="M14.4019 4.5C15.5566 2.5 18.4434 2.5 19.5981 4.5L29.1244 21C30.2791 23 28.8357 25.5 26.5263 25.5H7.47372C5.16432 25.5 3.72094 23 4.87564 21L14.4019 4.5Z"
+                                fill="#0071DC"
+                              />
+                              <path
+                                d="M14.4019 4.5C15.5566 2.5 18.4434 2.5 19.5981 4.5L29.1244 21C30.2791 23 28.8357 25.5 26.5263 25.5H7.47372C5.16432 25.5 3.72094 23 4.87564 21L14.4019 4.5Z"
+                                fill="white"
+                                fill-opacity="0.6"
+                              />
+                            </g>
+                            <path
+                              d="M15.0298 17C13.3626 17 12 18.4323 12 20.1854C12 21.1901 12.4479 22.0863 13.1403 22.6677V31.3199V31.3197C13.1403 31.6954 13.4301 32 13.7873 32H32.2127C32.5699 32 32.8597 31.6954 32.8597 31.3197V22.668C33.5521 22.0866 34 21.1904 34 20.1857C34 18.4328 32.6376 17.0003 30.9702 17.0003L15.0298 17ZM15.0298 18.3606H23.2659C24.2388 18.3606 25.0016 19.1625 25.0016 20.1854C25.0016 20.8518 24.6709 21.4135 24.1704 21.7356C23.9783 21.8591 23.8613 22.0789 23.8613 22.3156V30.6393H14.4342V22.3156C14.4342 22.079 14.3171 21.8592 14.1252 21.7356C13.6247 21.4135 13.294 20.8518 13.294 20.1854C13.294 19.1625 14.0568 18.3606 15.0297 18.3606H15.0298ZM25.7464 18.3606H30.9704C31.9434 18.3606 32.7062 19.1625 32.7062 20.1854C32.7062 20.8518 32.3754 21.4135 31.875 21.7356H31.8748C31.6829 21.8591 31.5657 22.0789 31.5657 22.3156V30.6393H25.1557V22.6679C25.8481 22.0865 26.296 21.1903 26.296 20.1856C26.296 19.508 26.0924 18.8784 25.7464 18.3608L25.7464 18.3606ZM18.2226 21.7773H18.2224C18.0543 21.7824 17.8949 21.8563 17.7775 21.9831L16.0366 23.8134C15.9124 23.9404 15.8418 24.1142 15.8405 24.2965C15.8393 24.4787 15.9075 24.6537 16.0299 24.7824C16.1525 24.9113 16.319 24.983 16.4923 24.9817C16.6656 24.9804 16.831 24.9061 16.9518 24.7754L18.6927 22.945V22.9452C18.8841 22.7495 18.9415 22.4505 18.8375 22.192C18.7335 21.9337 18.4892 21.769 18.2224 21.7773H18.2226ZM20.4076 23.2294H20.4074C20.2394 23.2347 20.0799 23.3083 19.9628 23.4351L17.4179 26.1106C17.2935 26.2376 17.2229 26.4117 17.2217 26.5937C17.2204 26.7759 17.2886 26.9509 17.4112 27.0798C17.5336 27.2085 17.7003 27.2803 17.8734 27.2789C18.0467 27.2776 18.2123 27.2034 18.3329 27.0728L20.8778 24.3973C21.0691 24.2016 21.1267 23.9026 21.0227 23.6441C20.9186 23.3858 20.6743 23.221 20.4075 23.2294L20.4076 23.2294ZM21.7888 25.5266C21.6207 25.5319 21.4611 25.6058 21.3439 25.7326L19.603 27.5629V27.5627C19.4789 27.6897 19.4085 27.8637 19.4073 28.0456C19.4062 28.2276 19.4744 28.4026 19.5968 28.5313C19.7192 28.66 19.8855 28.7317 20.0587 28.7306C20.2318 28.7293 20.3972 28.6552 20.5179 28.5248L22.2589 26.6945C22.4503 26.499 22.5079 26.1999 22.4039 25.9415C22.2997 25.683 22.0554 25.5185 21.7887 25.5266L21.7888 25.5266Z"
+                              fill="#1A162E"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Bakery & Bread</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Shop All </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> New in Bakery </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Sliced Bread </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Rolls & Buns </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Tortillas </a>
+                            </li>
+
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Breakfast Breads </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Pies </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Cookies & Brownies </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Menu 2.2 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="35"
+                            height="36"
+                            viewBox="0 0 35 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M14.8787 2.12132C16.0503 0.949748 17.9497 0.949747 19.1213 2.12132L31.8787 14.8787C33.0503 16.0503 33.0503 17.9497 31.8787 19.1213L19.1213 31.8787C17.9497 33.0503 16.0503 33.0503 14.8787 31.8787L2.12132 19.1213C0.949748 17.9497 0.949747 16.0503 2.12132 14.8787L14.8787 2.12132Z"
+                              fill="#FFB700"
+                            />
+                            <path
+                              d="M14.8787 2.12132C16.0503 0.949748 17.9497 0.949747 19.1213 2.12132L31.8787 14.8787C33.0503 16.0503 33.0503 17.9497 31.8787 19.1213L19.1213 31.8787C17.9497 33.0503 16.0503 33.0503 14.8787 31.8787L2.12132 19.1213C0.949748 17.9497 0.949747 16.0503 2.12132 14.8787L14.8787 2.12132Z"
+                              fill="white"
+                              fill-opacity="0.5"
+                            />
+                            <path
+                              d="M32.9076 34.4612C32.9917 30.0729 30.2217 26.0365 26.3813 24.5387C22.5059 23.0304 17.9767 24.339 15.3649 27.7235C13.9179 29.5999 13.0508 32.0225 13.0954 34.4612C13.1103 35.1392 14.1013 35.1392 14.0864 34.4612C14.0121 30.5669 16.4551 26.8934 19.8844 25.5533C21.6586 24.8595 23.6061 24.7702 25.4244 25.3168C27.1737 25.8372 28.7348 26.9355 29.8942 28.4174C31.1975 30.0834 31.9558 32.2906 31.916 34.4612C31.9013 35.1339 32.8923 35.1339 32.9072 34.4612L32.9076 34.4612Z"
+                              fill="#1A162E"
+                            />
+                            <path
+                              d="M12.4793 34.9869H14.5755H19.6102H25.6759H30.9191C31.7715 34.9869 32.6338 35.0184 33.486 34.9869H33.5208C34.1601 34.9869 34.1601 33.9359 33.5208 33.9359H31.4246H26.3899H20.3242H15.0811C14.2286 33.9359 13.3664 33.9044 12.5141 33.9359H12.4793C11.8402 33.9359 11.8402 34.9869 12.4793 34.9869Z"
+                              fill="#1A162E"
+                            />
+                            <path
+                              d="M21.5283 20.1714C21.8802 19.3516 22.4105 18.474 22.2122 17.5384C22.1329 17.1601 21.9347 16.8131 21.687 16.5347C21.4986 16.3191 21.3253 16.1142 21.2857 15.8094C21.2411 15.4469 21.4293 15.0684 21.5484 14.7373C21.6771 14.3799 21.8061 14.0227 21.9348 13.6652C22.029 13.4024 21.8308 13.0871 21.588 13.0187C21.3104 12.9399 21.0726 13.1186 20.9784 13.3866C20.8743 13.681 20.7653 13.9752 20.6612 14.2695C20.5423 14.5954 20.3887 14.9318 20.3292 15.2733C20.2648 15.6464 20.2796 16.0301 20.4086 16.3873C20.5423 16.7605 20.7653 17.018 21.0081 17.3071C21.3203 17.6803 21.3154 18.1323 21.1321 18.5684C20.9784 18.9258 20.8248 19.283 20.6713 19.6351C20.5622 19.8926 20.602 20.2028 20.8496 20.3551C21.0676 20.492 21.4195 20.429 21.5284 20.1714L21.5283 20.1714Z"
+                              fill="#1A162E"
+                            />
+                            <path
+                              d="M24.9863 21.7535C25.3382 20.9336 25.8685 20.056 25.6702 19.1205C25.5909 18.7422 25.3927 18.3952 25.145 18.1167C24.9566 17.9012 24.7833 17.6963 24.7437 17.3914C24.6991 17.0289 24.8873 16.6504 25.0064 16.3193C25.1352 15.9619 25.2641 15.6047 25.3929 15.2472C25.487 14.9844 25.2888 14.6691 25.046 14.6008C24.7684 14.522 24.5306 14.7007 24.4364 14.9686C24.3323 15.263 24.2233 15.5572 24.1192 15.8516C24.0003 16.1774 23.8467 16.5138 23.7872 16.8553C23.7228 17.2285 23.7376 17.6121 23.8666 17.9693C24.0003 18.3425 24.2233 18.6 24.4661 18.8891C24.7783 19.2623 24.7734 19.7143 24.5901 20.1504C24.4364 20.5078 24.2828 20.865 24.1293 21.2171C24.0202 21.4747 24.06 21.7848 24.3076 21.9371C24.5206 22.074 24.8725 22.011 24.9864 21.7535L24.9863 21.7535Z"
+                              fill="#1A162E"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Frozen</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Frozen Breakfast </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Frozen Potatoes </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Frozen Meals & Snacks </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Sub-menu-column 3 -->
+                    <div class="sub-menu-column">
+                      <!-- Menu 3.1 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M15 0C11.5297 -4.13833e-08 8.1667 1.20329 5.4841 3.40484C2.8015 5.6064 0.965248 8.67 0.288221 12.0736C-0.388807 15.4773 0.13528 19.0104 1.77118 22.071C3.40708 25.1315 6.05358 27.5302 9.25975 28.8582C12.4659 30.1862 16.0334 30.3615 19.3543 29.3541C22.6752 28.3467 25.544 26.219 27.472 23.3336C29.4001 20.4481 30.2679 16.9834 29.9278 13.5297C29.5876 10.0761 28.0605 6.84729 25.6066 4.39339L15 15V0Z"
+                              fill="#7644E1"
+                            />
+                            <path
+                              d="M15 0C11.5297 -4.13833e-08 8.1667 1.20329 5.4841 3.40484C2.8015 5.6064 0.965248 8.67 0.288221 12.0736C-0.388807 15.4773 0.13528 19.0104 1.77118 22.071C3.40708 25.1315 6.05358 27.5302 9.25975 28.8582C12.4659 30.1862 16.0334 30.3615 19.3543 29.3541C22.6752 28.3467 25.544 26.219 27.472 23.3336C29.4001 20.4481 30.2679 16.9834 29.9278 13.5297C29.5876 10.0761 28.0605 6.84729 25.6066 4.39339L15 15V0Z"
+                              fill="white"
+                              fill-opacity="0.7"
+                            />
+                            <path
+                              d="M22.9922 34.0429H15.6955L14.9145 19.6883H25.3924L25.2972 21.3343H25.2971C25.2866 21.4603 25.3273 21.5853 25.4097 21.6807C25.4923 21.7762 25.6097 21.8343 25.7353 21.8416C25.8618 21.858 25.9894 21.8192 26.0859 21.7351C26.1823 21.651 26.2384 21.5295 26.2401 21.4014L26.3449 19.6883H26.8497C26.9761 19.6883 27.0972 19.6379 27.1866 19.5481C27.2758 19.4585 27.3259 19.3367 27.3259 19.2099C27.3259 19.083 27.2758 18.9612 27.1866 18.8716C27.0972 18.7818 26.9761 18.7314 26.8497 18.7314H20.6297V16.1571C20.6302 15.8016 20.8094 15.4705 21.1059 15.2768L23.2396 13.8797V13.8795C23.3461 13.8111 23.4203 13.7023 23.4456 13.5778C23.4707 13.4533 23.4444 13.3239 23.373 13.2193C23.2306 12.9975 22.9368 12.9334 22.7157 13.0756L20.5535 14.4729C20.0001 14.8524 19.6716 15.4841 19.6771 16.1571V18.7314H13.4762C13.2133 18.7314 13 18.9455 13 19.2099C13 19.3367 13.0502 19.4585 13.1395 19.5482C13.2289 19.6379 13.35 19.6883 13.4762 19.6883H13.9621L14.7622 34.5406C14.7724 34.7974 14.9827 35.0002 15.2385 35H22.9825C23.1088 35 23.2299 34.9496 23.3192 34.8598C23.4086 34.77 23.4588 34.6484 23.4588 34.5214C23.4588 34.2609 23.2513 34.0481 22.992 34.0429L22.9922 34.0429Z"
+                              fill="#1A162E"
+                            />
+                            <path
+                              d="M31.4706 28.3011L34.9188 23.3056C35.066 23.0863 35.0085 22.7886 34.7901 22.6406C34.5718 22.4926 34.2755 22.5505 34.1282 22.7698L30.318 28.2724H28.3559C28.3241 28.131 28.3082 27.9865 28.3082 27.8416C28.303 27.2088 28.5479 26.5997 28.9887 26.1478C29.4298 25.6957 30.0311 25.4377 30.6609 25.4302C30.9108 25.4272 31.1593 25.4693 31.3943 25.5545C31.6466 25.6368 31.918 25.5005 32.0039 25.2483C32.0134 25.1817 32.0134 25.114 32.0039 25.0474V24.9805V24.9803C32.0347 23.7974 31.4347 22.6878 30.4304 22.0699C29.4259 21.4517 28.1696 21.4189 27.1346 21.9836C26.0996 22.5485 25.4431 23.6252 25.4124 24.8081C24.834 25.0806 24.3455 25.5138 24.0045 26.0565C23.6635 26.5992 23.4844 27.2287 23.4883 27.8704C23.4912 28.0951 23.5134 28.3194 23.555 28.5402C23.5109 28.629 23.4943 28.7291 23.5073 28.8274L24.4597 34.5693H24.4599C24.4971 34.7997 24.6943 34.9696 24.9267 34.9713H32.547C32.7794 34.9696 32.9766 34.7997 33.0138 34.5693L33.9662 28.8274C33.981 28.7218 33.9609 28.6142 33.9091 28.5212C33.9538 28.2973 33.9793 28.07 33.9853 27.8417C33.9842 27.4909 33.9295 27.1424 33.8234 26.8082C33.7445 26.544 33.4672 26.394 33.2043 26.4733C32.9411 26.5525 32.792 26.8311 32.8709 27.0952C32.9498 27.3364 32.9915 27.588 32.9946 27.8417C33.0117 27.9943 33.018 28.1478 33.0137 28.3012L31.4706 28.3011ZM28.7273 22.5593C29.2723 22.5623 29.7995 22.7544 30.2196 23.1031C30.6399 23.4521 30.9269 23.936 31.0324 24.4732H30.6609C29.953 24.4759 29.2661 24.7149 28.7082 25.1527C28.1563 24.7427 27.4896 24.5182 26.8032 24.5116H26.4316C26.5306 23.9697 26.8135 23.4791 27.2321 23.1231C27.6505 22.7672 28.1789 22.5679 28.7272 22.5592L28.7273 22.5593ZM26.8222 25.4301V25.4303C27.264 25.4298 27.6969 25.556 28.07 25.7939C27.6338 26.3725 27.3964 27.0778 27.3938 27.8035C27.383 27.9469 27.383 28.0907 27.3938 28.2341H24.4409C24.4311 28.1004 24.4311 27.9661 24.4409 27.8322C24.4384 27.2026 24.6829 26.5975 25.1216 26.1477C25.5601 25.6982 26.1576 25.4403 26.7842 25.4303L26.8222 25.4301ZM32.1755 34.0429H25.3172L24.5265 29.258H32.928L32.1755 34.0429Z"
+                              fill="#1A162E"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Snacks</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Shop All </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Chips </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Popcorn & Pretzels </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- Menu 3.2 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="33"
+                            height="36"
+                            viewBox="0 0 33 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.8519 0.475538C14.587 0.171056 15.413 0.171056 16.1481 0.475538L24.4586 3.91786C25.1936 4.22234 25.7777 4.80636 26.0821 5.54145L29.5245 13.8519C29.8289 14.587 29.8289 15.413 29.5245 16.1481L26.0821 24.4586C25.7777 25.1936 25.1936 25.7777 24.4586 26.0821L16.1481 29.5245C15.413 29.8289 14.587 29.8289 13.8519 29.5245L5.54145 26.0821C4.80636 25.7777 4.22234 25.1936 3.91786 24.4586L0.475538 16.1481C0.171056 15.413 0.171056 14.587 0.475538 13.8519L3.91786 5.54145C4.22234 4.80636 4.80636 4.22234 5.54145 3.91786L13.8519 0.475538Z"
+                              fill="#F94545"
+                            />
+                            <path
+                              d="M13.8519 0.475538C14.587 0.171056 15.413 0.171056 16.1481 0.475538L24.4586 3.91786C25.1936 4.22234 25.7777 4.80636 26.0821 5.54145L29.5245 13.8519C29.8289 14.587 29.8289 15.413 29.5245 16.1481L26.0821 24.4586C25.7777 25.1936 25.1936 25.7777 24.4586 26.0821L16.1481 29.5245C15.413 29.8289 14.587 29.8289 13.8519 29.5245L5.54145 26.0821C4.80636 25.7777 4.22234 25.1936 3.91786 24.4586L0.475538 16.1481C0.171056 15.413 0.171056 14.587 0.475538 13.8519L3.91786 5.54145C4.22234 4.80636 4.80636 4.22234 5.54145 3.91786L13.8519 0.475538Z"
+                              fill="white"
+                              fill-opacity="0.3"
+                            />
+                            <path
+                              d="M27.9226 34.9995C27.9083 34.9995 27.894 34.9995 27.8797 34.9987C27.5985 34.9866 27.3339 34.8569 27.153 34.6419C25.5902 32.7836 25.2925 30.5985 26.4456 29.4455C27.5984 28.2926 29.7848 28.5902 31.6422 30.1527C31.8569 30.3331 31.987 30.5981 31.9993 30.8795C32.0115 31.1615 31.9041 31.4376 31.7044 31.6373L31.6254 31.7166L31.5189 31.7502C31.2665 31.8303 30.9724 31.8343 30.6913 31.8298C30.4713 31.8329 30.1398 31.829 30.0449 31.8933C29.5424 32.2321 29.1102 32.6838 28.7945 33.1998C28.7828 33.2485 28.8056 33.4764 28.8191 33.6124C28.8462 33.8827 28.874 34.1625 28.79 34.4046L28.7117 34.6293L28.6374 34.7036C28.448 34.8932 28.1895 34.9996 27.9225 34.9996L27.9226 34.9995ZM27.0936 30.0938C26.3114 30.8761 26.6456 32.6145 27.8544 34.0522C27.8748 34.0764 27.9008 34.0822 27.919 34.0832C27.9212 34.0827 27.924 34.0827 27.9279 34.0832C27.937 34.0039 27.9187 33.8187 27.9071 33.7036C27.873 33.3617 27.8377 33.008 28.0126 32.7221C28.3965 32.0946 28.9217 31.5455 29.5322 31.1337C29.86 30.9121 30.3016 30.9099 30.6921 30.9134C30.8248 30.9126 30.9658 30.9139 31.0815 30.9036C31.0782 30.888 31.0703 30.87 31.0524 30.8549C29.615 29.6458 27.8763 29.3123 27.0936 30.0938L27.0936 30.0938Z"
+                              fill="#1A162E"
+                            />
+                            <path
+                              d="M13.7198 19.2546C12.6724 19.2546 11.4578 18.773 10.358 17.8479C10.1434 17.6675 10.0132 17.4025 10.0009 17.121C9.98879 16.8391 10.0962 16.563 10.2959 16.3633L10.3703 16.2885L10.5958 16.2107C10.8375 16.1274 11.1175 16.1546 11.3873 16.1816C11.5231 16.1954 11.7507 16.217 11.8204 16.1964C12.3162 15.8901 12.7682 15.4579 13.107 14.9562C13.1709 14.8612 13.1705 14.5296 13.1704 14.3103C13.1702 14.0272 13.17 13.7349 13.2502 13.4821L13.2839 13.3755L13.3629 13.2967C13.5625 13.097 13.84 12.9843 14.1207 13.0018C14.4018 13.0139 14.6665 13.1436 14.8473 13.3585C16.4101 15.2168 16.7079 17.402 15.5547 18.555C15.0844 19.0253 14.4417 19.2545 13.7198 19.2545L13.7198 19.2546ZM10.9168 17.0735V17.0815C10.9176 17.0994 10.9238 17.1254 10.9479 17.146C12.3856 18.3554 14.1245 18.6884 14.9067 17.9069C15.6889 17.1245 15.3547 15.3861 14.1459 13.9484C14.1306 13.9305 14.1125 13.9225 14.0969 13.9193C14.0867 14.0352 14.0871 14.178 14.0871 14.3092C14.0876 14.699 14.0879 15.1407 13.8668 15.4684C13.455 16.0785 12.9055 16.6038 12.2781 16.9879C11.993 17.1629 11.6387 17.1275 11.2966 17.0934C11.1825 17.0829 11.0003 17.0645 10.9169 17.0735L10.9168 17.0735ZM15.2307 18.2309H15.2352H15.2307Z"
+                              fill="#1A162E"
+                            />
+                            <path
+                              d="M24.3319 31.1301C22.2197 31.1301 19.6 29.8961 17.3524 27.6488C15.7554 26.0518 14.6099 24.1846 14.1275 22.3911C13.6208 20.5085 13.8974 18.9169 14.9059 17.9088C15.914 16.9003 17.5057 16.6237 19.3883 17.1304C21.1821 17.6134 23.0495 18.7588 24.6463 20.3557C26.2433 21.9527 27.3888 23.8199 27.8712 25.6134C28.3779 27.496 28.1013 29.0876 27.0928 30.0957C26.3931 30.7958 25.4306 31.1301 24.3315 31.1301H24.3319ZM17.6478 17.7994C16.7755 17.7994 16.0554 18.0554 15.5539 18.5567C14.7871 19.3234 14.5949 20.6008 15.0125 22.1531C15.4541 23.7939 16.5153 25.5157 18.0006 27.0009C20.9527 29.9531 24.8196 31.0731 26.445 29.4479C27.2118 28.6811 27.4039 27.4037 26.9863 25.8515C26.5447 24.2106 25.4835 22.4889 23.9983 21.0036C22.5131 19.5181 20.7913 18.4569 19.1502 18.0155C18.6131 17.8711 18.1091 17.7994 17.6476 17.7994L17.6478 17.7994Z"
+                              fill="#1A162E"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Candy</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Shop All </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Better for You </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Chocolate </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Sugar Free Candy </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Gum </a>
+                            </li>
+
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Mints </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> On-the-Go </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Sub-menu-column 4 -->
+                    <div class="sub-menu-column">
+                      <!-- Menu 4.1 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.5 27.9904C9.86806 29.3576 12.5648 30.0515 15.2987 29.997C18.0325 29.9426 20.6995 29.1419 23.0113 27.6815C25.323 26.2211 27.1916 24.1565 28.415 21.7111C29.6384 19.2656 30.17 16.5322 29.9524 13.8065C29.7349 11.0808 28.7764 8.46636 27.1806 6.24592C25.5848 4.02548 23.4123 2.2835 20.8982 1.20829C18.3841 0.133086 15.6238 -0.234428 12.916 0.145481C10.2081 0.525389 7.65554 1.63827 5.53434 3.3638L15 15L7.5 27.9904Z"
+                              fill="#F94545"
+                            />
+                            <path
+                              d="M7.5 27.9904C9.86806 29.3576 12.5648 30.0515 15.2987 29.997C18.0325 29.9426 20.6995 29.1419 23.0113 27.6815C25.323 26.2211 27.1916 24.1565 28.415 21.7111C29.6384 19.2656 30.17 16.5322 29.9524 13.8065C29.7349 11.0808 28.7764 8.46636 27.1806 6.24592C25.5848 4.02548 23.4123 2.2835 20.8982 1.20829C18.3841 0.133086 15.6238 -0.234428 12.916 0.145481C10.2081 0.525389 7.65554 1.63827 5.53434 3.3638L15 15L7.5 27.9904Z"
+                              fill="white"
+                              fill-opacity="0.6"
+                            />
+                            <path
+                              d="M30 20H31C32.0609 20 33.0783 20.4214 33.8284 21.1716C34.5786 21.9217 35 22.9391 35 24C35 25.0609 34.5786 26.0783 33.8284 26.8284C33.0783 27.5786 32.0609 28 31 28H30"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M14 20H30V29C30 30.0609 29.5786 31.0783 28.8284 31.8284C28.0783 32.5786 27.0609 33 26 33H18C16.9391 33 15.9217 32.5786 15.1716 31.8284C14.4214 31.0783 14 30.0609 14 29V20Z"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M18 13V16"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M22 13V16"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M26 13V16"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Cocktails & Mixes Coffee</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Ground Coffee </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Whole Bean Coffee </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Coffee Pods </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- Menu 4.2 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="33"
+                            height="36"
+                            viewBox="0 0 33 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.5 0.866025C14.4282 0.330127 15.5718 0.330127 16.5 0.866025L26.4904 6.63397C27.4186 7.16987 27.9904 8.16025 27.9904 9.23205V20.768C27.9904 21.8397 27.4186 22.8301 26.4904 23.366L16.5 29.134C15.5718 29.6699 14.4282 29.6699 13.5 29.134L3.50962 23.366C2.58142 22.8301 2.00962 21.8397 2.00962 20.768V9.23205C2.00962 8.16025 2.58142 7.16987 3.50962 6.63397L13.5 0.866025Z"
+                              fill="#67B044"
+                            />
+                            <path
+                              d="M13.5 0.866025C14.4282 0.330127 15.5718 0.330127 16.5 0.866025L26.4904 6.63397C27.4186 7.16987 27.9904 8.16025 27.9904 9.23205V20.768C27.9904 21.8397 27.4186 22.8301 26.4904 23.366L16.5 29.134C15.5718 29.6699 14.4282 29.6699 13.5 29.134L3.50962 23.366C2.58142 22.8301 2.00962 21.8397 2.00962 20.768V9.23205C2.00962 8.16025 2.58142 7.16987 3.50962 6.63397L13.5 0.866025Z"
+                              fill="white"
+                              fill-opacity="0.5"
+                            />
+                            <path
+                              d="M12.577 22.4286H12.6634L14.889 34.56C14.9351 34.8115 15.1772 35 15.4598 35H24.6845C24.967 35 25.2092 34.8167 25.2554 34.56L27.3886 22.9368C27.4925 22.7639 27.5789 22.5859 27.6596 22.4077C27.9365 22.3658 28.144 22.1614 28.144 21.8996V19.8043C28.144 19.731 28.1266 19.6577 28.092 19.5947C27.9075 18.0966 27.0658 16.7557 25.7974 15.7395L26.979 14.0477H29.4234C29.7406 14.0477 30 13.812 30 13.5239C30 13.2357 29.7406 13 29.4234 13H26.6618C26.4659 13 26.2813 13.0944 26.1717 13.2462L24.8745 15.1111C23.5311 14.315 21.865 13.8383 20.0719 13.8383C15.9208 13.8383 12.4389 16.3631 12.0519 19.6001C12.0232 19.6628 12 19.7363 12 19.8096V21.9049C12.0002 22.1929 12.2596 22.4286 12.5768 22.4286L12.577 22.4286ZM24.194 33.9525H15.9438L13.8279 22.4286H26.3039L24.194 33.9525ZM20.0717 14.8857C21.6399 14.8857 23.0985 15.2944 24.2689 15.991L23.2657 17.4366C23.0985 17.6829 23.1734 18.0024 23.4445 18.1596C23.5425 18.212 23.6462 18.2381 23.75 18.2381C23.9404 18.2381 24.1305 18.1491 24.2402 17.9919L25.1799 16.6353C26.0331 17.3633 26.6385 18.2695 26.875 19.2806H13.2689C13.8453 16.7767 16.6991 14.8857 20.0717 14.8857L20.0717 14.8857ZM13.1533 20.3332H26.9902V21.3807H13.1533V20.3332Z"
+                              fill="#1A162E"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Beverages</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Shop All </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Water </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Soft Drinks </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Fruit Juice </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Sports Drinks </a>
+                            </li>
+
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Energy Drinks </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Tea </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Hot Chocolate & Cocoa </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="navbar-item">
+            <a href="#!" class="navbar-link">
+              Beauty
+              <img src="./assets/icon/arrow-down.svg" alt="" class="navbar-arrow icon" />
+            </a>
+            <!-- Dropdown 3-->
+            <div class="dropdown js-dropdown">
+              <div class="dropdown-inner">
+                <div class="top-menu">
+                  <!-- Sub-menu -->
+                  <div class="sub-menu sub-menu-not-main">
+                    <!-- Sub-menu-column 1 -->
+                    <div class="sub-menu-column">
+                      <!-- Menu 1.1 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect width="30" height="30" rx="5" fill="#7644E1" />
+                            <rect width="30" height="30" rx="5" fill="white" fill-opacity="0.3" />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M28.4283 29.5892C25.4231 29.6401 22.473 29.638 19.5727 29.5892C16.3535 29.5892 14 27.293 14 24.1379V19.4883C14 16.3332 16.3535 14.037 19.5727 14.037C22.4889 13.9871 25.4411 13.9882 28.4283 14.037C31.6476 14.037 34 16.3343 34 19.4883V24.1379C34 27.293 31.6476 29.5892 28.4283 29.5892Z"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M27 21.9951C27 21.184 22.8425 18.5891 22.3709 19.0557C21.8993 19.5223 21.8539 24.424 22.3709 24.9346C22.8879 25.4469 27 22.8063 27 21.9951Z"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path d="M24 30V34H20H28" stroke="#1A162E" stroke-width="1.5" />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">TV & Video</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Shop all TVs </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> TVs by Size </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Smart TVs </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Roku TVs </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Streaming </a>
+                            </li>
+
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> TV Mounts & Accessories </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> DVD & Blu-Ray Players </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- Menu 1.2 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M17.0489 2.92705C17.3483 2.00574 18.6517 2.00574 18.9511 2.92705L21.8167 11.7467C21.9506 12.1587 22.3346 12.4377 22.7678 12.4377H32.0413C33.0101 12.4377 33.4128 13.6773 32.6291 14.2467L25.1267 19.6976C24.7762 19.9522 24.6295 20.4036 24.7634 20.8156L27.6291 29.6353C27.9284 30.5566 26.874 31.3227 26.0902 30.7533L18.5878 25.3024C18.2373 25.0478 17.7627 25.0478 17.4122 25.3024L9.90976 30.7533C9.12605 31.3227 8.07157 30.5566 8.37092 29.6353L11.2366 20.8156C11.3705 20.4036 11.2238 19.9522 10.8733 19.6976L3.37088 14.2467C2.58717 13.6773 2.98994 12.4377 3.95867 12.4377H13.2322C13.6654 12.4377 14.0494 12.1587 14.1833 11.7467L17.0489 2.92705Z"
+                              fill="#0071DC"
+                            />
+                            <path
+                              d="M17.0489 2.92705C17.3483 2.00574 18.6517 2.00574 18.9511 2.92705L21.8167 11.7467C21.9506 12.1587 22.3346 12.4377 22.7678 12.4377H32.0413C33.0101 12.4377 33.4128 13.6773 32.6291 14.2467L25.1267 19.6976C24.7762 19.9522 24.6295 20.4036 24.7634 20.8156L27.6291 29.6353C27.9284 30.5566 26.874 31.3227 26.0902 30.7533L18.5878 25.3024C18.2373 25.0478 17.7627 25.0478 17.4122 25.3024L9.90976 30.7533C9.12605 31.3227 8.07157 30.5566 8.37092 29.6353L11.2366 20.8156C11.3705 20.4036 11.2238 19.9522 10.8733 19.6976L3.37088 14.2467C2.58717 13.6773 2.98994 12.4377 3.95867 12.4377H13.2322C13.6654 12.4377 14.0494 12.1587 14.1833 11.7467L17.0489 2.92705Z"
+                              fill="white"
+                              fill-opacity="0.6"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M28.4283 29.5892C25.4231 29.6401 22.473 29.638 19.5727 29.5892C16.3535 29.5892 14 27.293 14 24.1379V19.4883C14 16.3332 16.3535 14.037 19.5727 14.037C22.4889 13.9871 25.4411 13.9882 28.4283 14.037C31.6476 14.037 34 16.3343 34 19.4883V24.1379C34 27.293 31.6476 29.5892 28.4283 29.5892Z"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M27 21.9951C27 21.184 22.8425 18.5891 22.3709 19.0557C21.8993 19.5223 21.8539 24.424 22.3709 24.9346C22.8879 25.4469 27 22.8063 27 21.9951Z"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path d="M24 30V34H20H28" stroke="#1A162E" stroke-width="1.5" />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Wearable Technology</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Galaxy Watch </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Apple Watch </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Fitness Trackers </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Virtual Reality </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Headphones </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Sub-menu-column 2 -->
+                    <div class="sub-menu-column">
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="35"
+                            height="36"
+                            viewBox="0 0 35 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M14.4019 4.5C15.5566 2.5 18.4434 2.5 19.5981 4.5L29.1244 21C30.2791 23 28.8357 25.5 26.5263 25.5H7.47372C5.16432 25.5 3.72094 23 4.87564 21L14.4019 4.5Z"
+                              fill="#F94545"
+                            />
+                            <path
+                              d="M14.4019 4.5C15.5566 2.5 18.4434 2.5 19.5981 4.5L29.1244 21C30.2791 23 28.8357 25.5 26.5263 25.5H7.47372C5.16432 25.5 3.72094 23 4.87564 21L14.4019 4.5Z"
+                              fill="white"
+                              fill-opacity="0.3"
+                            />
+                            <path
+                              d="M23.7 19H13.3C12.582 19 12 19.5756 12 20.2857V26.7143C12 27.4244 12.582 28 13.3 28H23.7C24.418 28 25 27.4244 25 26.7143V20.2857C25 19.5756 24.418 19 23.7 19Z"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M33 19H28C27.4477 19 27 19.582 27 20.3V30.7C27 31.418 27.4477 32 28 32H33C33.5523 32 34 31.418 34 30.7V20.3C34 19.582 33.5523 19 33 19Z"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M30.5 22.5H30.51"
+                              stroke="#1A162E"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15 32H22"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M18.5 28V32"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Computers</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Shop All Computers </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Laptops </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> PC Gaming </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Monitors </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Chromebook </a>
+                            </li>
+
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Printers & Ink </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Shop all TVs </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Computer Accessories </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Desktops </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Tax Software </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Computer Software </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> PC Finder </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Sub-menu-column 3 -->
+                    <div class="sub-menu-column">
+                      <!-- Menu 3.1 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.5 27.9904C9.86806 29.3576 12.5648 30.0515 15.2987 29.997C18.0325 29.9426 20.6995 29.1419 23.0113 27.6815C25.323 26.2211 27.1916 24.1565 28.415 21.7111C29.6384 19.2656 30.17 16.5322 29.9524 13.8065C29.7349 11.0808 28.7764 8.46636 27.1806 6.24592C25.5848 4.02548 23.4123 2.2835 20.8982 1.20829C18.3841 0.133086 15.6238 -0.234428 12.916 0.145481C10.2081 0.525389 7.65554 1.63827 5.53434 3.3638L15 15L7.5 27.9904Z"
+                              fill="#67B044"
+                            />
+                            <path
+                              d="M7.5 27.9904C9.86806 29.3576 12.5648 30.0515 15.2987 29.997C18.0325 29.9426 20.6995 29.1419 23.0113 27.6815C25.323 26.2211 27.1916 24.1565 28.415 21.7111C29.6384 19.2656 30.17 16.5322 29.9524 13.8065C29.7349 11.0808 28.7764 8.46636 27.1806 6.24592C25.5848 4.02548 23.4123 2.2835 20.8982 1.20829C18.3841 0.133086 15.6238 -0.234428 12.916 0.145481C10.2081 0.525389 7.65554 1.63827 5.53434 3.3638L15 15L7.5 27.9904Z"
+                              fill="white"
+                              fill-opacity="0.2"
+                            />
+                            <path
+                              d="M16 15H32C32.5304 15 33.0391 15.2107 33.4142 15.5858C33.7893 15.9609 34 16.4696 34 17V23C34 25.6522 32.9464 28.1957 31.0711 30.0711C29.1957 31.9464 26.6522 33 24 33C22.6868 33 21.3864 32.7413 20.1732 32.2388C18.9599 31.7362 17.8575 30.9997 16.9289 30.0711C15.0536 28.1957 14 25.6522 14 23V17C14 16.4696 14.2107 15.9609 14.5858 15.5858C14.9609 15.2107 15.4696 15 16 15V15Z"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M20 22L24 26L28 22"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Savings</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Tech Savings </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Overstock Savings </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Tech Rollbacks </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- Menu 3.2 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="33"
+                            height="36"
+                            viewBox="0 0 33 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.5 0.866025C14.4282 0.330127 15.5718 0.330127 16.5 0.866025L26.4904 6.63397C27.4186 7.16987 27.9904 8.16025 27.9904 9.23205V20.768C27.9904 21.8397 27.4186 22.8301 26.4904 23.366L16.5 29.134C15.5718 29.6699 14.4282 29.6699 13.5 29.134L3.50962 23.366C2.58142 22.8301 2.00962 21.8397 2.00962 20.768V9.23205C2.00962 8.16025 2.58142 7.16987 3.50962 6.63397L13.5 0.866025Z"
+                              fill="#7644E1"
+                            />
+                            <path
+                              d="M13.5 0.866025C14.4282 0.330127 15.5718 0.330127 16.5 0.866025L26.4904 6.63397C27.4186 7.16987 27.9904 8.16025 27.9904 9.23205V20.768C27.9904 21.8397 27.4186 22.8301 26.4904 23.366L16.5 29.134C15.5718 29.6699 14.4282 29.6699 13.5 29.134L3.50962 23.366C2.58142 22.8301 2.00962 21.8397 2.00962 20.768V9.23205C2.00962 8.16025 2.58142 7.16987 3.50962 6.63397L13.5 0.866025Z"
+                              fill="white"
+                              fill-opacity="0.4"
+                            />
+                            <path
+                              d="M26 14H16C14.8954 14 14 14.8954 14 16V32C14 33.1046 14.8954 34 16 34H26C27.1046 34 28 33.1046 28 32V16C28 14.8954 27.1046 14 26 14Z"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M21 30H21.01"
+                              stroke="#1A162E"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Cell Phones</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Wireless Deals </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> 5G Phones </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Prepaid Phones & Plans </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Refurbished Phones </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> iPhone Accessories </a>
+                            </li>
+
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Cases & Screen Protectors </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Walmart Protection Plan </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Unlocked Phones </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Sub-menu-column 4 -->
+                    <div class="sub-menu-column">
+                      <!-- Menu 3.1 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="36"
+                            height="36"
+                            viewBox="0 0 36 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.5 27.9904C9.86806 29.3576 12.5648 30.0515 15.2987 29.997C18.0325 29.9426 20.6995 29.1419 23.0113 27.6815C25.323 26.2211 27.1916 24.1565 28.415 21.7111C29.6384 19.2656 30.17 16.5322 29.9524 13.8065C29.7349 11.0808 28.7764 8.46636 27.1806 6.24592C25.5848 4.02548 23.4123 2.2835 20.8982 1.20829C18.3841 0.133086 15.6238 -0.234428 12.916 0.145481C10.2081 0.525389 7.65554 1.63827 5.53434 3.3638L15 15L7.5 27.9904Z"
+                              fill="#67B044"
+                            />
+                            <path
+                              d="M7.5 27.9904C9.86806 29.3576 12.5648 30.0515 15.2987 29.997C18.0325 29.9426 20.6995 29.1419 23.0113 27.6815C25.323 26.2211 27.1916 24.1565 28.415 21.7111C29.6384 19.2656 30.17 16.5322 29.9524 13.8065C29.7349 11.0808 28.7764 8.46636 27.1806 6.24592C25.5848 4.02548 23.4123 2.2835 20.8982 1.20829C18.3841 0.133086 15.6238 -0.234428 12.916 0.145481C10.2081 0.525389 7.65554 1.63827 5.53434 3.3638L15 15L7.5 27.9904Z"
+                              fill="white"
+                              fill-opacity="0.2"
+                            />
+                            <path
+                              d="M16 15H32C32.5304 15 33.0391 15.2107 33.4142 15.5858C33.7893 15.9609 34 16.4696 34 17V23C34 25.6522 32.9464 28.1957 31.0711 30.0711C29.1957 31.9464 26.6522 33 24 33C22.6868 33 21.3864 32.7413 20.1732 32.2388C18.9599 31.7362 17.8575 30.9997 16.9289 30.0711C15.0536 28.1957 14 25.6522 14 23V17C14 16.4696 14.2107 15.9609 14.5858 15.5858C14.9609 15.2107 15.4696 15 16 15V15Z"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M20 22L24 26L28 22"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Savings</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Tech Savings </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Overstock Savings </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Tech Rollbacks </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <!-- Menu 3.2 -->
+                      <div class="menu-column">
+                        <div class="menu-column-icon">
+                          <svg
+                            width="33"
+                            height="36"
+                            viewBox="0 0 33 36"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M13.5 0.866025C14.4282 0.330127 15.5718 0.330127 16.5 0.866025L26.4904 6.63397C27.4186 7.16987 27.9904 8.16025 27.9904 9.23205V20.768C27.9904 21.8397 27.4186 22.8301 26.4904 23.366L16.5 29.134C15.5718 29.6699 14.4282 29.6699 13.5 29.134L3.50962 23.366C2.58142 22.8301 2.00962 21.8397 2.00962 20.768V9.23205C2.00962 8.16025 2.58142 7.16987 3.50962 6.63397L13.5 0.866025Z"
+                              fill="#7644E1"
+                            />
+                            <path
+                              d="M13.5 0.866025C14.4282 0.330127 15.5718 0.330127 16.5 0.866025L26.4904 6.63397C27.4186 7.16987 27.9904 8.16025 27.9904 9.23205V20.768C27.9904 21.8397 27.4186 22.8301 26.4904 23.366L16.5 29.134C15.5718 29.6699 14.4282 29.6699 13.5 29.134L3.50962 23.366C2.58142 22.8301 2.00962 21.8397 2.00962 20.768V9.23205C2.00962 8.16025 2.58142 7.16987 3.50962 6.63397L13.5 0.866025Z"
+                              fill="white"
+                              fill-opacity="0.4"
+                            />
+                            <path
+                              d="M26 14H16C14.8954 14 14 14.8954 14 16V32C14 33.1046 14.8954 34 16 34H26C27.1046 34 28 33.1046 28 32V16C28 14.8954 27.1046 14 26 14Z"
+                              stroke="#1A162E"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M21 30H21.01"
+                              stroke="#1A162E"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="menu-column-content">
+                          <h2 class="menu-column-heading">Cell Phones</h2>
+                          <ul class="menu-column-list">
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Wireless Deals </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> 5G Phones </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Prepaid Phones & Plans </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Refurbished Phones </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> iPhone Accessories </a>
+                            </li>
+
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Cases & Screen Protectors </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Walmart Protection Plan </a>
+                            </li>
+                            <li class="menu-column-item">
+                              <a href="#!" class="menu-column-link"> Unlocked Phones </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Overlay -->
+      <div class="navbar-overlay js-toggle" toggle-target="#navbar"></div>
+      <!-- Action -->
+      <div class="top-action">
+        <div class="top-action-group d-md-none">
+          <button class="top-action-btn top-action-btn-single">
+            <img src="./assets/icon/search.svg" alt="" class="top-action-icon icon" />
+          </button>
+        </div>
+        <div class="top-action-group d-md-none">
+          <div class="top-action-btn-wrap">
+            <button class="top-action-btn btn-border-left">
+              <img src="./assets/icon/heart.svg" alt="" class="top-action-icon icon" />
+              <span class="top-action-title">03</span>
+            </button>
+            <!-- Dropdown -->
+            <div class="act-dropdown">
+              <div class="act-dropdown-inner">
+                <img src="./assets/icon/arrow-up.png" alt="" class="act-dropdown-arrow" />
+                <div class="act-dropdown-top">
+                  <h2 class="act-dropdown-title">You have 3 item(s)</h2>
+                  <a href="./favourite.html" class="act-dropdown-view-all">See All</a>
+                </div>
+                <div class="row row-cols-3 gx-2">
+                  <!-- Cart preview item 1-->
+                  <div class="col">
+                    <article class="cart-preview-item">
+                      <div class="cart-preview-item-img-wrap">
+                        <img src="./assets/images/product/item-2.png" alt="" class="cart-preview-item-thumb" />
+                      </div>
+                      <h3 class="cart-preview-item-title">Lavazza Coffee Blends</h3>
+                      <p class="cart-preview-item-price">$329.00</p>
+                    </article>
+                  </div>
+
+                  <!-- Cart preview item 2-->
+                  <div class="col">
+                    <article class="cart-preview-item">
+                      <div class="cart-preview-item-img-wrap">
+                        <img src="./assets/images/product/item-1.png" alt="" class="cart-preview-item-thumb" />
+                      </div>
+                      <h3 class="cart-preview-item-title">Coffee Beans Espresso</h3>
+                      <p class="cart-preview-item-price">$39.99</p>
+                    </article>
+                  </div>
+
+                  <!-- Cart preview item 3-->
+                  <div class="col">
+                    <article class="cart-preview-item">
+                      <div class="cart-preview-item-img-wrap">
+                        <img src="./assets/images/product/item-3.png" alt="" class="cart-preview-item-thumb" />
+                      </div>
+                      <h3 class="cart-preview-item-title">Qualità Oro Mountain</h3>
+                      <p class="cart-preview-item-price">$47.00</p>
+                    </article>
+                  </div>
+                </div>
+                <div class="act-dropdown-separate"></div>
+                <div class="act-dropdown-checkout">
+                  <a href="./checkout.html" class="btn btn-primary btn-rounded act-dropdown-checkout-btn"
+                    >Check Out All</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="top-action-separate"></div>
+
+          <div class="top-action-btn-wrap">
+            <button class="top-action-btn btn-border-right">
+              <img src="./assets/icon/card.svg" alt="" class="top-action-icon icon" />
+              <span class="top-action-title">$65.42</span>
+            </button>
+
+            <!-- Dropdown -->
+            <div class="act-dropdown">
+              <div class="act-dropdown-inner">
+                <img src="./assets/icon/arrow-up.png" alt="" class="act-dropdown-arrow" />
+                <div class="act-dropdown-top">
+                  <h2 class="act-dropdown-title">You have 3 item(s)</h2>
+                  <a href="./checkout.html" class="act-dropdown-view-all">See All</a>
+                </div>
+                <div class="row row-cols-3 gx-2">
+                  <!-- Cart preview item 1-->
+                  <div class="col">
+                    <article class="cart-preview-item">
+                      <div class="cart-preview-item-img-wrap">
+                        <img src="./assets/images/product/item-2.png" alt="" class="cart-preview-item-thumb" />
+                      </div>
+                      <h3 class="cart-preview-item-title">Lavazza Coffee Blends</h3>
+                      <p class="cart-preview-item-price">$329.00</p>
+                    </article>
+                  </div>
+
+                  <!-- Cart preview item 2-->
+                  <div class="col">
+                    <article class="cart-preview-item">
+                      <div class="cart-preview-item-img-wrap">
+                        <img src="./assets/images/product/item-1.png" alt="" class="cart-preview-item-thumb" />
+                      </div>
+                      <h3 class="cart-preview-item-title">Coffee Beans Espresso</h3>
+                      <p class="cart-preview-item-price">$39.99</p>
+                    </article>
+                  </div>
+
+                  <!-- Cart preview item 3-->
+                  <div class="col">
+                    <article class="cart-preview-item">
+                      <div class="cart-preview-item-img-wrap">
+                        <img src="./assets/images/product/item-3.png" alt="" class="cart-preview-item-thumb" />
+                      </div>
+                      <h3 class="cart-preview-item-title">Qualità Oro Mountain</h3>
+                      <p class="cart-preview-item-price">$47.00</p>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="act-dropdown-bottom">
+                  <div class="act-dropdown-row">
+                    <span class="act-dropdown-label">Subtotal</span>
+                    <span class="act-dropdown-value">$415.99</span>
+                  </div>
+                  <div class="act-dropdown-row">
+                    <span class="act-dropdown-label">Texes</span>
+                    <span class="act-dropdown-value">Free</span>
+                  </div>
+                  <div class="act-dropdown-row">
+                    <span class="act-dropdown-label">Shipping</span>
+                    <span class="act-dropdown-value">$10.00</span>
+                  </div>
+                  <div class="act-dropdown-row act-dropdown-row-bold">
+                    <span class="act-dropdown-label">Total Price</span>
+                    <span class="act-dropdown-value">$425.99</span>
+                  </div>
+                </div>
+
+                <div class="act-dropdown-checkout">
+                  <a href="./checkout.html" class="btn btn-primary btn-rounded act-dropdown-checkout-btn"
+                    >Check Out All</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="top-action-user">
+          <a href="./profile.html">
+            <img src="./assets/images/avatar.jpg" alt="" class="top-action-avatar" />
+          </a>
+          <!-- Dropdown -->
+          <div class="act-dropdown top-action-dropdown">
+            <div class="act-dropdown-inner user-menu">
+              <img src="./assets/icon/arrow-up.png" alt="" class="act-dropdown-arrow top-action-dropdown-arrow" />
+
+              <div class="user-menu-top">
+                <img src="./assets/images/avatar.jpg" alt="" class="top-action-avatar" />
+                <div>
+                  <p class="user-menu-name">Angela Jolie</p>
+                  <p>@angelajolie</p>
+                </div>
+              </div>
+              
+
+              <ul class="user-menu-list">
+                <li class="user-menu-separate">
+                  <a
+                   href="./profile.html" class="user-menu-link">
+                  Profile
+                </a>
+                </li>
+                <li>
+                  <a href="./favourite.html" class="user-menu-link">
+                  
+                    Favourite list
+                  </a>
+                </li>
+                <li class="user-menu-separate">
+                  <a href="#!" class="user-menu-link" id="switch-theme-btn">
+                  <span>Dark mode</span>
+                  <svg class="icon user-menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M192 64C86 64 0 150 0 256S86 448 192 448l192 0c106 0 192-86 192-192s-86-192-192-192L192 64zm192 96a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!" class="user-menu-link">
+                  Setting
+                </a>
+                </li>
+                <li class="user-menu-separate">
+                  <a href="./sign-in.html" class="user-menu-link">
+                  Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Main -->
+    <main class="profile">
+      <div class="container">
+        <!-- Search bar -->
+        <div class="profile-container">
+          <div class="search-bar d-none d-md-flex">
+            <input type="text" name="" id="" placeholder="Search for item" class="search-bar-input" />
+            <button class="search-bar-submit">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  cx="11.7666"
+                  cy="11.7666"
+                  r="8.98856"
+                  stroke="#1A162E"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.0183 18.4852L21.5423 22.0001"
+                  stroke="#1A162E"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+       
+        <!-- Profile content -->
+        <div class="profile-container">
+          <div class="row gy-md-3">
+            <div class="col-3 col-xl-4 d-lg-none">
+              <aside class="profile-sidebar">
+                <div class="profile-user">
+                  <img src="./assets/images/avatar/avatar-2.png" alt="" class="profile-user-avatar">
+                  <h1 class="profile-user-name">Imran Khan</h1>
+                  <p class="profile-user-desc">Registered: 17th May 2022</p>
+                </div>
+                <!-- Menu 1 -->
+                 <div class="profile-menu">
+                  <h3 class="profile-menu-title">Manage Account</h3>
+                  <ul class="profile-menu-list">
+                    <li>
+                      <a href="./edit-personal-info.html" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9847 15.3457C8.11707 15.3457 4.81421 15.9305 4.81421 18.2724C4.81421 20.6143 8.09611 21.22 11.9847 21.22C15.8523 21.22 19.1542 20.6343 19.1542 18.2933C19.1542 15.9524 15.8733 15.3457 11.9847 15.3457Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9846 12.0059C14.5227 12.0059 16.5799 9.94779 16.5799 7.40969C16.5799 4.8716 14.5227 2.81445 11.9846 2.81445C9.44655 2.81445 7.38845 4.8716 7.38845 7.40969C7.37988 9.93922 9.42369 11.9973 11.9523 12.0059H11.9846Z" stroke="#1A162E" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </span>
+                        Personal info
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 10.5005C14.5 9.11924 13.3808 8 12.0005 8C10.6192 8 9.5 9.11924 9.5 10.5005C9.5 11.8808 10.6192 13 12.0005 13C13.3808 13 14.5 11.8808 14.5 10.5005Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9995 21C10.801 21 4.5 15.8984 4.5 10.5633C4.5 6.38664 7.8571 3 11.9995 3C16.1419 3 19.5 6.38664 19.5 10.5633C19.5 15.8984 13.198 21 11.9995 21Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </span>
+                        Addresses
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9024 8.85156L13.4591 12.4646C12.6196 13.1306 11.4384 13.1306 10.5989 12.4646L6.11816 8.85156" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9089 21C19.9502 21.0084 22 18.5095 22 15.4384V8.57001C22 5.49883 19.9502 3 16.9089 3H7.09114C4.04979 3 2 5.49883 2 8.57001V15.4384C2 18.5095 4.04979 21.0084 7.09114 21H16.9089Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </span>
+                        Communications & privacy
+                      </a>
+                    </li>
+                  </ul>
+                 </div>
+
+                 <!-- Menu 2 -->
+                 <div class="profile-menu">
+                  <h3 class="profile-menu-title">My items</h3>
+                  <ul class="profile-menu-list">
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.1223 15.4365L12.1223 3.39551" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.0383 12.5088L12.1223 15.4368L9.20633 12.5088" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.7551 8.12793H17.6881C19.7231 8.12793 21.3721 9.77693 21.3721 11.8129V16.6969C21.3721 18.7269 19.7271 20.3719 17.6971 20.3719L6.55707 20.3719C4.52207 20.3719 2.87207 18.7219 2.87207 16.6869V11.8019C2.87207 9.77293 4.51807 8.12793 6.54707 8.12793L7.48907 8.12793" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                    
+                        </span>
+                        Reorder
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.87187 11.5983C1.79887 8.24832 3.05287 4.41932 6.56987 3.28632C8.41987 2.68932 10.4619 3.04132 11.9999 4.19832C13.4549 3.07332 15.5719 2.69332 17.4199 3.28632C20.9369 4.41932 22.1989 8.24832 21.1269 11.5983C19.4569 16.9083 11.9999 20.9983 11.9999 20.9983C11.9999 20.9983 4.59787 16.9703 2.87187 11.5983Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 6.70001C17.07 7.04601 17.826 8.00101 17.917 9.12201" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                  
+                        </span>
+                        Lists
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12V21H5V12" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 8H3V12H21V8Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 21V8" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8H8.14286C7.57454 8 7.02949 7.73661 6.62763 7.26777C6.22576 6.79893 6 6.16304 6 5.5C6 4.83696 6.22576 4.20107 6.62763 3.73223C7.02949 3.26339 7.57454 3 8.14286 3C11.1429 3 12 8 12 8Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8H15.8571C16.4255 8 16.9705 7.73661 17.3724 7.26777C17.7742 6.79893 18 6.16304 18 5.5C18 4.83696 17.7742 4.20107 17.3724 3.73223C16.9705 3.26339 16.4255 3 15.8571 3C12.8571 3 12 8 12 8Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                      
+                        </span>
+                        Registries
+                      </a>
+                    </li>
+                  </ul>
+                 </div>
+
+                 <!-- Menu 3 -->
+                 <div class="profile-menu">
+                  <h3 class="profile-menu-title">Subscriptions & plans</h3>
+                  <ul class="profile-menu-list">
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9846 21.606C11.9846 21.606 19.6566 19.283 19.6566 12.879C19.6566 6.474 19.9346 5.974 19.3196 5.358C18.7036 4.742 12.9906 2.75 11.9846 2.75C10.9786 2.75 5.26557 4.742 4.65057 5.358C4.03457 5.974 4.31257 6.474 4.31257 12.879C4.31257 19.283 11.9846 21.606 11.9846 21.606Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.38574 11.8741L11.2777 13.7691L15.1757 9.86914" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                           
+                        </span>
+                        Protection plans
+                      </a>
+                    </li>                   
+                  </ul>
+                 </div>
+
+                 <!-- Menu 4 -->
+                 <div class="profile-menu">
+                  <h3 class="profile-menu-title">Customer Service</h3>
+                  <ul class="profile-menu-list">
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.334 2.75009H7.665C4.644 2.75009 2.75 4.88909 2.75 7.91609V16.0841C2.75 19.1111 4.635 21.2501 7.665 21.2501H16.333C19.364 21.2501 21.25 19.1111 21.25 16.0841V7.91609C21.25 4.88909 19.364 2.75009 16.334 2.75009Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.9941 16.0001V12.0001" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.9901 8.20419H12.0001" stroke="#1A162E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                                   
+                        </span>
+                        Help
+                      </a>
+                    </li>    
+                    <li>
+                      <a href="" class="profile-menu-link">
+                        <span class="profile-menu-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.75009C17.108 2.75009 21.25 6.89109 21.25 12.0001C21.25 17.1081 17.108 21.2501 12 21.2501C6.891 21.2501 2.75 17.1081 2.75 12.0001C2.75 6.89109 6.891 2.75009 12 2.75009Z" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.9951 8.20419V12.6232" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.995 15.7961H12.005" stroke="#1A162E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                                                       
+                        </span>
+                        Terms of Use
+                      </a>
+                    </li>                    
+                  </ul>
+                 </div>
+              </aside>
+            </div>
+            <div class="col-9 col-xl-8 col-lg-12">
+              <div class="cart-info">
+                <div class="row">
+                  <!-- Add credit or debit card -->
+                   <div class="col-12">
+                    <div>
+                        
+                      <h2 class="cart-info-heading-lv2">
+                        <a href="./profile.html">
+                          <svg class="cart-info-back-arrow" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.75 7.27441L15.75 7.27441" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.7998 13.2988L0.749804 7.27476L6.7998 1.24976" stroke="#1A162E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                        </a>
+                        Add credit or debit card</h2>
+                    </div>
+                    <form action="./profile.html" class="form form-card">
+                      <!-- Form row 1 -->
+                      <div class="form-row">
+                        <div class="form-group">  
+                          <label for="first-name" class="form-label form-card-label">First name</label>
+                          <div class="form-text-input">
+                            <input type="text" name="" id="first-name" placeholder="First name" class="form-input" autofocus/>
+                            
+                          </div>
+                          <p class="form-error">Name is not in correct format</p>
+                        </div>
+                        <div class="form-group">  
+                          <label for="last-name" class="form-label form-card-label">Last name</label>
+                          <div class="form-text-input">
+                            <input type="text" name="" id="last-name" placeholder="Last name" class="form-input" />
+                            
+                          </div>
+                          <p class="form-error">Name is not in correct format</p>
+                        </div>
+                      </div>
+
+                      <!-- Form row 2 -->
+                      <div class="form-row">
+                        <div class="form-group">  
+                          <label for="card-number" class="form-label form-card-label">Card Information</label>
+                          <div class="form-text-input">
+                            <input type="number" name="" id="card-number" placeholder="Card Number" class="form-input" />
+                            
+                          </div>
+                          <p class="form-error">Number is not in correct format</p>
+                        </div>
+                        <div class="form-group">  
+                          <label for="expiration-date" class="form-label form-card-label">Expiration Date</label>
+                          <div class="form-text-input">
+                            <input type="number" name="" id="expiration-date" placeholder="MM/YY" class="form-input" />
+                            
+                          </div>
+                          <p class="form-error">Date is not in correct format</p>
+                        </div>
+                      </div>
+                      <!-- Form row 3 -->
+                      <div class="form-row">
+                        <div class="form-group">  
+                          <label for="card-cvv" class="form-label form-card-label">CVV</label>
+                          <div class="form-text-input">
+                            <input type="number" name="" id="card-cvv" placeholder="123" class="form-input" />
+                            
+                          </div>
+                          <p class="form-error">Name is not in correct format</p>
+                        </div>
+                        <div class="form-group">  
+                          <label for="phone-number" class="form-label form-card-label">Phone Number</label>
+                          <div class="form-text-input">
+                            <input type="number" name="" id="phone-number" placeholder="Phone Number" class="form-input" />
+                            
+                          </div>
+                          <p class="form-error">Name is not in correct format</p>
+                        </div>
+                        
+                      </div>
+
+                      <div class="form-group">  
+                        <label for="set-default-card" class="form-label form-card-label">Card Preferences</label>
+                        <label class="form-checkbox">
+                          <input type="checkbox" name="" id="set-default-card" class="form-checkbox-input d-none" checked />
+                          <span class="form-checkbox-label">Set as default card</span>
+                        </label>
+                      </div>
+                      <div class="form-card-bottom">
+                        <a href="./profile.html" class="btn btn-text">Cancel</a>
+                        <button class="btn btn-primary btn-rounded">Save Card</button>
+                      </div>
+                    </form>
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <!-- Column 1 -->
+             <div class="footer-column">
+                <!-- Logo -->
+                 <a href="#!" class="footer-logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.79999 0H27.2L32 8V30.4C32 31.2837 31.2837 32 30.4 32H1.6C0.716344 32 0 31.2837 0 30.4V8L4.79999 0ZM2.79886 8H29.2011L25.8411 2.4H6.15888L2.79886 8ZM8 12.4C8.66272 12.4 9.2 12.9373 9.2 13.6C9.2 17.3555 12.2445 20.4 16 20.4C19.7555 20.4 22.8 17.3555 22.8 13.6C22.8 12.9373 23.3373 12.4 24 12.4C24.6627 12.4 25.2 12.9373 25.2 13.6C25.2 18.681 21.081 22.8 16 22.8C10.919 22.8 6.8 18.681 6.8 13.6C6.8 12.9373 7.33728 12.4 8 12.4Z" fill="#77DAE6"/>
+                        </svg>
+                    
+                    <h1 class="logo-title">grocerymart</h1>
+                 </a>
+                 <p class="footer-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum ipsam molestias dolores incidunt repellendus</p>
+                 <p class="footer-desc-text">Receive product news and updates.</p>
+                 <form action="" class="footer-form">
+                    <input type="text" class="footer-input" placeholder="Email address">
+                    <button class="btn btn-primary">SEND</button>
+                 </form>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Shop</h3>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#!" class="footer-link">
+                            All Departments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer-link">
+                            Fashion Deals
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer-link">
+                            Electronics Discounts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer-link">
+                            Home & Living Specials
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer-link">
+                            Beauty Bargains
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Support</h3>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#!" class="footer-link">
+                            Store locator
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer-link">
+                            Order status
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-list">
+                    <li>
+                        <a href="#!" class="footer-link">
+                            Customer Service
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer-link">
+                            Terms of Use
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer-link">
+                            Privacy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer-link">
+                            Careers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer-link">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="footer-link">
+                            Affiliates
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Column 5 -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Contact</h3>
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-lable">Email</p>
+                        <a href="mailto:contact@grocerymart.com" class="footer-link">
+                            contact@grocerymart.com
+                        </a>
+                    </li>
+                    <li>
+                        <p class="footer-lable">Hotline</p>
+
+                        <a href="tel:18008888" class="footer-link">
+                            18008888
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <p class="footer-lable">Address</p>
+                        <p class="footer-text">No. 11D, Lot A10, Nam Trung Yen urban area, Yen Hoa Ward, Cau Giay District, City. Hanoi</p>
+                        
+                    </li>
+                    <li>
+                        <p class="footer-lable">Hours</p>
+                        <p class="footer-text">M - F 08:00am - 06:00pm</p>
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                © 2010 - 2025 Grocery Mart. All rights reserved.
+            </p>
+            <div class="footer-social">
+                <a href="#!" class="footer-social-link">
+                    <img src="./assets/images/social/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="#!" class="footer-social-link">
+                    <img src="./assets/images/social/youtube-icon.png" alt="Youtube">
+                </a>
+                <a href="#!" class="footer-social-link">
+                    <img src="./assets/images/social/tiktok-icon.png" alt="Tiktok">
+                </a>
+                <a href="#!" class="footer-social-link">
+                    <img src="./assets/images/social/twitter-icon.png" alt="Twitter">
+                </a>
+                <a href="#!" class="footer-social-link">
+                    <img src="./assets/images/social/linkedin-icon.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+     <!-- Modal : confirm delete shopping cart item -->
+
+     <div id="delete-confirm" class="modal modal-small hide">
+      <!-- <button class="modal-close">&times;</button> -->
+      <div class="modal-content">
+        <div class="modal-text">Do you want to delete this item ?</div>
+        <div class="modal-bottom">
+          <button class="btn btn-small btn-outline modal-btn js-toggle" toggle-target="#delete-confirm">Cancel</button>
+          <button class="btn btn-small btn-danger  btn-primary modal-btn btn-no-margin js-toggle" toggle-target="#delete-confirm">Delete</button>
+        </div>
+      </div>
+      <div class="modal-overlay js-toggle" toggle-target="#delete-confirm"></div>
+    </div>
+
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>

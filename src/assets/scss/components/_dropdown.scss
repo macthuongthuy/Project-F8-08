@@ -1,0 +1,163 @@
+@use "../abstracts";
+.dropdown {
+    position: absolute;
+    width: min(1240px, 100%);
+    left: 0;
+    padding-top: 54px;
+    display: none;
+    @include abstracts.screen (lg) {
+        position: initial;
+        padding-top: 0;
+
+    }
+
+    &-inner {
+        --inner-padding: 28px;
+        position: relative;
+        padding: var(--inner-padding) ;
+        border-radius: 20px;
+        background: var(--color-dropdown-bg);
+        -webkit-box-shadow: var(--color-dropdown-shadow);
+        box-shadow: var(--color-dropdown-shadow);
+        // max-height: min(620px, 100vh - 158px);
+
+        &::before {
+            content: url("../icon/dropdown-arrow.svg");
+            position: absolute;
+            top: -13px;
+            left: var(--arrow-left-pos);
+            translate: -50%;
+            border-radius: 2px;
+            -webkit-filter: var(--color-dropdown-arrow);
+                    filter: var(--color-dropdown-arrow);
+            display: block;
+        }
+        @include abstracts.screen (lg) {
+            padding: 0 40px 0;
+            border-radius: 0;
+            background: transparent;
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            &::before {
+                content: none;
+            }
+        }
+        @include abstracts.screen (sm) {
+            padding: 0 20px 0;
+
+        }
+    }
+    
+}
+.top-menu {
+    position: relative;
+
+
+    @include abstracts.screen (lg) {
+    }
+    &-main {
+        width: 292px;
+        height: calc(min(620px, 100vh - 158px) - var(--inner-padding) * 2);
+        border-right: 1px solid var(--color-top-menu);
+        overflow-y: auto;
+        
+        @include abstracts.screen (lg) {
+            width: 100%;
+            height: auto;
+            border-right: none;
+
+        }
+    }
+
+}
+.menu-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 14px;
+
+
+    +.menu-column {
+        margin-top: 22px;
+    }
+    
+    &-icon {
+        width: 36px;
+        height: 36px;
+
+        @include abstracts.screen (xl) {
+            display: none;
+        }
+
+        @include abstracts.screen (lg) {
+            display: block;
+        }
+    }
+    &-content {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+    }
+    &-heading {
+        margin: 6px 0 24px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    &-list {
+        margin-top: 19px;
+        @include abstracts.screen (lg) {
+            margin-top: 0;
+        }
+    }
+    &-item {
+        &-active > .sub-menu{
+            display: grid;
+        }
+    
+        
+    }
+    &-item-active > &-link,
+    &-item:hover > &-link {
+        color: rgba(0, 113, 220, 1);
+        font-weight: 500;
+        }
+    &-link {
+        display: block;
+        padding: 7px 0;
+        font-size: 14px;
+    }
+
+   
+}
+
+.sub-menu {
+    position: absolute;
+    inset: 0 0 0 292px;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 30px;
+    overflow-y: auto;
+    
+
+    @include abstracts.screen (lg) {
+        position: initial;
+        grid-template-columns: 1fr;
+        padding: 20px 0 0;
+
+    }
+    &-not-main {
+        position: initial;
+        inset: initial;
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        overflow-y: auto;
+        height: calc(min(620px, 100vh - 158px) - var(--inner-padding) * 2);
+
+
+        @include abstracts.screen (lg) {
+            grid-template-columns: 1fr;
+            height: auto;
+        }
+    }
+}

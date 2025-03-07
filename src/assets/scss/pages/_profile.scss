@@ -1,0 +1,105 @@
+.profile {
+    margin-bottom: 50px;
+    &-container {
+        margin-top: 30px;
+    }
+    &-sidebar {
+        border-radius: 20px;
+        -webkit-box-shadow: 0px 20px 60px 10px var(--profile-shadow);
+                box-shadow: 0px 20px 60px 10px var(--profile-shadow);
+        background: var(--profile-bg);
+        overflow: hidden;
+    }
+    &-user {
+         display: -webkit-box;
+
+        display: -ms-flexbox;
+
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+        height: 246px;
+        padding: 40px 20px 20px;
+        background: -o-linear-gradient(top, rgba(26, 22, 46, 0) 0%, #1A162E 100%), url("../images/profile/cover.jpg") no-repeat center / cover;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 22, 46, 0)), to(#1A162E)), url("../images/profile/cover.jpg") no-repeat center / cover;
+        background: linear-gradient(180deg, rgba(26, 22, 46, 0) 0%, #1A162E 100%), url("../images/profile/cover.jpg") no-repeat center / cover;
+
+        &-avatar {
+            width: 121px;
+            height: 121px;
+            border-radius: 50%;
+            -o-object-fit: cover;
+               object-fit: cover;
+               -webkit-box-shadow: 0px 4px 14px 2px #00000014;
+                       box-shadow: 0px 4px 14px 2px #00000014;
+                       border: 5px solid rgba(255, 255, 255, 0.6);
+            background: #ccc content-box;
+                       
+
+        }
+        &-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            margin-top: 15px;
+        }
+        &-desc {
+            font-size: 15px;
+            font-weight: 500;
+            color: #FAFAFD;
+            margin-top: 2px;
+        }
+    }
+    &-menu {
+        margin: 30px;
+        &-title {
+            font-size: 18px;
+            font-weight: 500;
+        }
+        &-list {
+            margin: 16px 0 30px;
+        }
+        &-link {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            padding: 0 5px;
+            height: 32px;
+            border-radius: 5px;
+            -webkit-transition: background 0.2s;
+            -o-transition: background 0.2s;
+            transition: background 0.2s;
+            &:hover {
+                background: var(--profile-menu-link-hover);
+            }
+        }
+        &-icon {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+        }
+        
+    }
+    &-desc {
+        margin-bottom: 16px;
+    }
+}
+
+
+

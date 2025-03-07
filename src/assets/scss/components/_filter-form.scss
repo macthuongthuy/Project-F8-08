@@ -1,0 +1,210 @@
+@use "../abstracts";
+.filter-wrap {
+    position: relative;
+    z-index: 1;
+}
+.filter {
+    position: absolute;
+    right: 0;
+    top: 55px;
+    border-radius: 20px;
+    padding: 30px;
+    background: var(--filter-form-bg);
+    -webkit-filter: drop-shadow( 0px 40px 90px 20px var(--filter-form-shadow));
+            filter: drop-shadow( 0px 40px 90px 20px var(--filter-form-shadow));
+    -webkit-transition: opacity, visibility;
+    -o-transition: opacity, visibility;
+    transition: opacity, visibility;
+    -webkit-transition-duration: 0.25s;
+         -o-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+
+
+
+            @include abstracts.screen(sm) {
+                width: 85vw;
+                
+                        
+            }
+               
+    &.hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &-arrow {
+        position: absolute;
+        top:-13px;
+        right: 25px;
+        height: 20px;
+    }
+        
+    
+
+    &-heading, input{
+        font-size: 22px;
+        font-weight: 500;
+        color: var(--filter-form-heading);
+    }
+    
+    
+    input {
+        @include abstracts.screen(xl) {
+            font-size: 16px;
+        }
+    }
+
+
+    &-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+       
+    }
+
+    &-content {
+        @include abstracts.screen(xl) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+                    height: calc(100vh - 470px);
+                    overflow-y: auto;
+        }
+       }
+
+       
+    &-form {
+        margin-top: 30px;
+
+        &-group {
+            margin-top: 20px;
+
+            &-inline {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;  
+                gap: 30px;
+                
+                input {
+                    font-size: 14px;
+                    width: 121px;
+                    border: 1px solid var(--filter-form-border);
+                    border-radius: 6px;
+                    padding: 8px 12px;
+
+                    @include abstracts.screen(sm) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        
+
+        &-slider {
+            position: relative;
+            width: 272px;
+            height: 2px;
+            background: var(--filter-form-border);
+
+        &::before, &::after {
+            position: absolute;
+            content: "";
+            width: 22px;
+            height: 22px;
+            border: 6px solid var(--filter-form-primary);
+            border-radius: 50%;
+            background: var(--filter-form-bg);
+        }
+        &::before {
+            left: var(--min-value);
+            translate: 10% -50%;
+        }
+        &::after {
+            left: var(--max-value);
+            translate: 90% -50%;
+        }
+        }
+
+
+        &-text-input {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+                    
+            padding: 0 16px;
+            width: 334px;
+            height: 44px;
+            border: 1px solid #D2D1D6;
+            border-radius: 6px;
+            overflow: hidden;
+
+                input {
+                width: 100%;
+                font-size: 15px;
+                    font-weight: 400;
+                }
+            &::-webkit-input-placeholder {
+                font-weight: 400;
+                color: #9E9DA8;
+            }
+            &::-moz-placeholder {
+                font-weight: 400;
+                color: #9E9DA8;
+            }
+            &::-ms-input-placeholder {
+                font-weight: 400;
+                color: #9E9DA8;
+            }
+            &::placeholder {
+                font-weight: 400;
+                color: #9E9DA8;
+            }
+
+                svg {
+                    margin-left: 10px;
+                }
+
+                @include abstracts.screen(sm) {
+                    width: 100%;
+                }
+        }
+    }
+
+    
+    
+    
+    &-separate {
+        border: 1px solid #eee;
+        margin: 0 30px;
+
+        @include abstracts.screen(xl) {
+            height: 1px;
+            width: 100%;
+            margin: 30px 0;
+
+        }
+    }
+
+    &-footer {
+        margin-top: 32px;
+        float: right;
+
+        button {
+            padding: 0 10px;
+            height: 38px;
+        }
+    }
+   
+
+   
+
+    
+}

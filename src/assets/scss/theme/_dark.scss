@@ -1,0 +1,101 @@
+html.dark {
+    --color-icon: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1640%) hue-rotate(200deg) brightness(115%) contrast(100%);
+    --color-text: #fff;
+    --color-body-background:#292e39;
+    --color-header-background:#171C28;
+    --color-top-action-separate: #ededf6;
+    --color-btn-primary: #FFB700;
+
+    --top-action-btn: #292E39;
+    
+
+    --color-cate-item-bg:#171C28;
+    --color-cate-item-thumb-bg: #292e39;
+    --color-cate-item-title: #fff;
+
+    --color-filer-btn: #fff;
+    --filter-form-btn: #171C28;
+
+    // Header
+    --header-act-dropdown-bg: #363b47;
+    --header-act-dropdown-shadow: #00000033;
+    --act-dropdown-arrow: brightness(0) saturate(100%) invert(22%) sepia(9%) saturate(962%) hue-rotate(184deg) brightness(94%) contrast(92%);
+
+    --header-act-dropdown-border-color: #171C28;
+    --cart-preview-item-img: #171C28;
+    // Navbar
+    --nav-bar-show: #292e39;
+
+    // Produc-card
+    --color-product-card-bg: #171C28;
+    --color-product-card-shadow: #00000033;
+    --color-like-btn-shadow: #7C7C7C33;
+    --like-btn-bg: #292E39;
+
+    // Footer
+    --footer-bg-color: #171C28;
+
+    // Dropdown
+    --color-dropdown-bg: #383a3f;
+    --color-dropdown-shadow: rgba(200, 200, 200, 0.4);
+    --color-top-menu: rgba(210, 209, 214, 1);
+    --color-dropdown-arrow: brightness(0) saturate(100%) invert(24%) sepia(1%) saturate(2198%) hue-rotate(185deg) brightness(95%) contrast(102%);
+
+
+    
+
+ // Auth
+     --auth-content-bg: #383a3f;
+
+// Breadcrumbs
+    --breadcrumbs-bg: #171C28;
+    --breadcrumbs-shadow: #171C2833;
+
+// Product detail
+--product-detail-bg: #383a3f;
+--product-info-container: #383a3f;
+
+// Product info
+--pro-info-bg: #171C28;
+
+--pro-info-like-btn: #D2D1D6;
+
+// Filter form
+--filter-form-primary: #FFB700;
+--filter-form-secondary: #9E9DA8;
+--filter-form-bg: #fff;
+--filter-form-shadow: #C8C8C866;
+--filter-form-heading: #fff;
+--filter-form-border: #D2D1D6;
+--form-tag: #292E39;
+--filter-form-btn: #171C28;
+
+--pro-info-tag: #292E39;
+
+--text-content-blockquote: rgba(119, 218, 230, 0.1);
+
+// Checkout
+--checkout-breadcrums-bg: #171C28;
+--cart-info-bg: #171C28;
+--cart-info-shadow: #171C2833;
+// Payment
+--payment-item-info-bg: #292E39;
+// Modal
+--modal-content-bg: #383a3f;
+// Form
+--form-option-hover: #383a3f;
+
+//  Profile
+    --profile-bg: #171C28;
+    --profile-shadow: #171C2833;
+    --profile-menu-link-hover: #383a3f;
+// Account
+    --account-info-bg: #292E39;
+    --account-info-icon: #171C28;
+// Separate
+    --separate-color: #292e39;
+// Search-bar
+    --search-bar-bg: #171C28;
+    // Separate
+    --separate-color: #292E39;
+}

@@ -1,0 +1,104 @@
+@use "../abstracts";
+
+%fill-screen {
+    position: fixed;
+    inset: 0;
+}
+.modal {
+    @extend %fill-screen;
+    z-index: 99;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: opacity, visibility;
+        -o-transition: opacity, visibility;
+        transition: opacity, visibility;
+        -webkit-transition-duration: 0.2s;
+             -o-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+                &.show {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &-close {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: #000000;
+                    z-index: 2;
+                }
+
+    
+    
+    &-overlay {
+        @extend %fill-screen;
+        background: rgba($color: #000000, $alpha: 0.4);
+    }
+    &-heading {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &-body {
+        max-height: calc(100vh - 180px);
+        overflow-y: auto;
+    }
+    &-content {
+        position: relative;
+        z-index: 1;
+        background: var(--modal-content-bg);
+        padding: 30px;
+        border-radius: 20px;
+        width: min(var(--content-width, 800px), 100% - 40px);
+        @include abstracts.screen(sm) {
+            padding: 20px;
+        }
+    }
+    &-small &-content {
+        --content-width: 400px;
+    }
+    &-large &-content {
+        --content-width: 1100px;
+    }
+    &-fill &-content {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    &-text {
+        font-size: 18px;
+        
+    }
+    &-bottom {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: end;
+                    -ms-flex-pack: end;
+                        justify-content: flex-end;
+                        gap: 20px;
+        margin-top: 30px;
+        
+        @include abstracts.screen(sm) {
+            margin-top: 40px;
+        }
+    }
+    &-btn {
+            @include abstracts.screen(md) {
+            -webkit-box-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
+        }
+    }
+}

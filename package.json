@@ -1,0 +1,19 @@
+{
+  "name": "gulp-html-template",
+  "version": "1.0.0",
+  "description": "Simple HTML template with Gulp",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.27.11",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.80.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}

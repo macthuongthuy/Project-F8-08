@@ -1,0 +1,274 @@
+@use "../abstracts";
+
+.product-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: var(--product-detail-bg);
+    min-height: 80vh;
+    padding-bottom: 50px;
+}
+.product-container {
+    margin-top: 30px;
+    @include abstracts.screen(md) {
+        margin-top: 20px;
+    }
+}
+
+.pro-info-container {
+    border-radius: 20px;
+    background: var(--product-info-container);
+}
+
+.pro-preview {
+    padding: 0 30px;
+
+    @include abstracts.screen(lg) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+    &-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        @include abstracts.screen(lg) {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+    }
+    &-item {
+        width: 100%;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        position: relative;
+        padding-top: 92%;
+    }
+    &-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+    &-thumbs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 30px;
+        gap: 16px;
+        @include abstracts.screen(lg) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            padding-left: 0;
+        }
+        @include abstracts.screen(md) {
+            display: none;
+        }
+    }
+    &-thumb-img {
+        width: 65px;
+        height: 65px;
+        -o-object-fit: contain;
+        object-fit: contain;
+        border: 1.5px solid rgb(158, 157, 168, 0.3);
+        border-radius: 8px;
+        opacity: 0.9;
+        -webkit-transition: opacity 0.3s;
+        -o-transition: opacity 0.3s;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+
+        &:not(&-current):hover {
+            opacity: 1;
+            border-color: #9e9da8;
+            cursor: pointer;
+        }
+        &-current {
+            border-color: #ffb700;
+            opacity: 1;
+        }
+    }
+}
+.pro-info {
+    padding: 60px;
+    background: var(--pro-info-bg);
+
+    @include abstracts.screen(xxl) {
+        padding: 40px;
+        border-radius: 10px;
+    }
+    @include abstracts.screen(lg) {
+        margin-top: 30px;
+    }
+    @include abstracts.screen(md) {
+    }
+    &-heading {
+        font-size: 26px;
+        font-weight: 500;
+    }
+    &-label {
+        margin-top: 30px;
+    }
+
+    &-card {
+        padding: 20px;
+        margin-top: 30px;
+        border: 1px solid #b9babe;
+        border-radius: 6px;
+    }
+    &-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    &-price {
+        font-size: 16px;
+        font-weight: 500;
+        margin-right: 10px;
+    }
+    &-tax {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 2px 8px;
+        color: #67b044;
+        background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), #67b044;
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), #67b044;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), #67b044;
+    }
+    &-total-price {
+        font-size: 26px;
+        font-weight: 500;
+        margin: 20px 0;
+    }
+    &-row-btn {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &-btn {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    &-like-btn {
+        border-radius: 6px;
+        border: 1px solid #d2d1d6;
+        background: transparent;
+    }
+    &-tag {
+        background: var(--pro-info-tag);
+    }
+}
+
+.pro-props {
+    padding-left: 30px;
+    @include abstracts.screen(xxl) {
+        padding-left: 10px;
+    }
+    @include abstracts.screen(lg) {
+        padding-left: 0;
+    }
+}
+
+.pro-prop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+    @include abstracts.screen(md) {
+        margin-top: 20px;
+    }
+
+    &-title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &-desc {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+.pro-tab {
+    &-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0 -30px;
+        @include abstracts.screen(md) {
+            margin: 0 -20px;
+        }
+    }
+    &-item {
+        padding: 0 30px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #9e9da8;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        &:not(&-current) {
+            cursor: pointer;
+        }
+        &-current {
+            color: inherit;
+        }
+        @include abstracts.screen(md) {
+            font-size: 18px;
+            padding: 8px 20px;
+        }
+    }
+    &-contents {
+        padding-top: 30px;
+    }
+
+    &-content {
+        display: none;
+
+        &-current {
+            display: block;
+        }
+    }
+    &-text-content {
+        margin-top: -20px;
+    }
+}
+.pro-content {
+    &-heading {
+        font-size: 22px;
+        font-weight: 600;
+        padding-bottom: 30px;
+    }
+}
