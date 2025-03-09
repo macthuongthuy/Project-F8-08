@@ -63,13 +63,13 @@ html.dark {
 // Filter form
 --filter-form-primary: #FFB700;
 --filter-form-secondary: #9E9DA8;
---filter-form-bg: #fff;
+--filter-form-bg: #151820;
 --filter-form-shadow: #C8C8C866;
 --filter-form-heading: #fff;
 --filter-form-border: #D2D1D6;
 --form-tag: #292E39;
 --filter-form-btn: #171C28;
-
+--filter-arrow: brightness(0) saturate(100%) invert(9%) sepia(24%) saturate(514%) hue-rotate(185deg) brightness(96%) contrast(99%);
 --pro-info-tag: #292E39;
 
 --text-content-blockquote: rgba(119, 218, 230, 0.1);
