@@ -480,16 +480,16 @@
             -webkit-appearance: none;
                -moz-appearance: none;
                     appearance: none;
-            &:not(:checked)::before {
-                -webkit-filter: var(--color-icon);
-                        filter: var(--color-icon);
-            }
-            &::before {
-                content: url("../icon/checkbox-uncheck.svg");
-            }
-
-            &:checked::before {
-                content: url("../icon/checkbox-checked.svg");
+                    &:not(:checked)::before {
+                        -webkit-filter: var(--color-icon);
+                                filter: var(--color-icon);
+                    }
+                    
+                    &::before {
+                        content: url("../icon/checkbox-uncheck.svg");
+                    }
+                    &:checked::before {
+                        content: url("../icon/checkbox-checked.svg");
             }
         }
     }

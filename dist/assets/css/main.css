@@ -1395,6 +1395,7 @@ html.dark {
   --separate-color: #292e39;
   --search-bar-bg: #171C28;
   --separate-color: #292E39;
+  --review-card-bg: #171C28;
 }
 
 html {
@@ -3574,6 +3575,7 @@ html {
 .pro-info {
   padding: 60px;
   background: var(--pro-info-bg);
+  border-radius: 20px;
 }
 @media (max-width: 1399.98px) {
   .pro-info {

@@ -114,6 +114,7 @@
 .pro-info {
     padding: 60px;
     background: var(--pro-info-bg);
+    border-radius: 20px;
 
     @include abstracts.screen(xxl) {
         padding: 40px;
