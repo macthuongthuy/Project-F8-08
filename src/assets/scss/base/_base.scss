@@ -73,3 +73,6 @@ b, strong {
     height: 1px;
     background: var(--separate-color);
 }
+.pointer-event-none {
+    pointer-events: none;
+}

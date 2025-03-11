@@ -200,6 +200,10 @@ b, strong {
   background: var(--separate-color);
 }
 
+.pointer-event-none {
+  pointer-events: none;
+}
+
 .row > *, .container-fluid, .container {
   padding-left: calc(var(--grid-gutter-x) * 0.5);
   padding-right: calc(var(--grid-gutter-x) * 0.5);
@@ -2428,6 +2432,7 @@ html {
 .product-card-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .product-card-star {
   margin: 0 6px 0 auto;
@@ -3845,6 +3850,7 @@ html {
 
 .cart-item {
   display: flex;
+  align-items: flex-start;
   padding: 30px 0;
   border-bottom: 1px solid #D2D1D6;
 }
